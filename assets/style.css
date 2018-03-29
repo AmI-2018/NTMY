@@ -40,7 +40,7 @@ a:hover {
 /* jumbotron */
 
 #home {
-    background-image: linear-gradient(rgba(0,0,0,0.3) 0%,rgba(0,0,0,0.3) 100%), url('handshake.jpg');
+    background-image: linear-gradient(rgba(0,0,0,0.3) 0%,rgba(0,0,0,0.3) 100%), url('../images/handshake.jpg');
     background-position: center;
     background-size: cover;
     border-radius: 0px;
