@@ -1,12 +1,12 @@
 var transHeight = 100;
 
 function makeNavTransp() {
-    $("#navbar-main").css("background-color", "rgba(248, 252, 256, 0)");
+    $("#navbar-main").css("background-color", "rgba(250, 250, 250, 0)");
     $("#navbar-main").removeClass("navbar-light").addClass("navbar-dark");
 }
 
 function makeNavSolid() {
-    $("#navbar-main").css("background-color", "rgba(248, 252, 256, 0.95)");
+    $("#navbar-main").css("background-color", "rgba(250, 250, 250, 0.95)");
     $("#navbar-main").removeClass("navbar-dark").addClass("navbar-light");
 }
 

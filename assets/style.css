@@ -29,7 +29,7 @@ a:hover {
 
 #navbar-main {
     transition: background-color .2s linear;
-    background-color: rgba(248, 252, 256, 0);
+    background-color: rgba(250, 250, 250, 0);
 }
 
 .logo {
@@ -60,7 +60,7 @@ a:hover {
 }
 
 #github-cta {
-    background-color: white;
+    background-color: rgba(250, 250, 250, 1);
 }
 
 .social-icon {
