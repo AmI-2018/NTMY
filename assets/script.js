@@ -1,13 +1,13 @@
 var transHeight = 100;
 
 function makeNavTransp() {
-    $(".navbar").css("background-color", "rgba(248, 252, 256, 0)");
-    $(".navbar").removeClass("navbar-light").addClass("navbar-dark");
+    $("#navbar-main").css("background-color", "rgba(248, 252, 256, 0)");
+    $("#navbar-main").removeClass("navbar-light").addClass("navbar-dark");
 }
 
 function makeNavSolid() {
-    $(".navbar").css("background-color", "rgba(248, 252, 256, 0.95)");
-    $(".navbar").removeClass("navbar-dark").addClass("navbar-light");
+    $("#navbar-main").css("background-color", "rgba(248, 252, 256, 0.95)");
+    $("#navbar-main").removeClass("navbar-dark").addClass("navbar-light");
 }
 
 function scrollingActions() {
@@ -52,7 +52,7 @@ $(document).ready(function() {
     });
 
     $(".navbar-toggler").on("click", function() {
-        if ($(".navbar-collapse").hasClass("show") && $(window).scrollTop() == transHeight) {
+        if ($(".navbar-collapse").hasClass("show") && $(window).scrollTop() <= transHeight) {
             makeNavTransp();
         } else {
             makeNavSolid();
