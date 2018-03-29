@@ -2,7 +2,7 @@
 
 NTMY is an Ambient Intelligence system that aims to help students in university colleges to meet new friends by letting the users organize thematic events
 ## Vision
-Imagine you are in a college/campus, where you can meet a great amount of people. NTMY, giving you the opportunity to organise thematic events in the college, will help you to meet new friends!
+Imagine you are in a university college, where you can meet a great amount of people. NTMY, giving you the opportunity to organise thematic events in the college, will help you to meet new friends!
 
 Every user wears a coloured bracelet. With the app you can create a new meeting/event in the college to know new people (like see a football match in tv or do a card game). The system will then set a specific location for the event (considering the type of the event and the free college’s place) and it will assign it a colour; the user’s bracelet will turn that colour too (e.g. blue). Whenever a new event is created, people in the college with the same interests get a notification and, if they decide to participate at the blue event, their bracelet will become blue. The lights in the reserved room will also become blue to indicate that the room will host the blue event, and in the main streets of the college some indicators will color of blue, to easily find the place.
 
