@@ -37,6 +37,10 @@ a:hover {
     font-size: 24px;
 }
 
+.navbar-toggler:focus {
+    outline: none;
+}
+
 /* jumbotron */
 
 #home {

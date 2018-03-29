@@ -18,7 +18,7 @@ function scrollingActions() {
     }
 
     /* navbar coloring */
-    if (scrollTop > 0) {
+    if (scrollTop > 100) {
         makeNavSolid();
     } else {
         makeNavTransp();
