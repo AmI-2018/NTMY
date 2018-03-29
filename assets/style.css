@@ -72,10 +72,14 @@ a:hover {
     padding-bottom: 5px;
 }
 
+.team-pic-container {
+    max-width: 175px;
+    margin: auto;
+}
+
 .team-pic {
     border-radius: 100%;
     margin: 5px;
-    max-width: 175px;
 }
 
 /* footer */

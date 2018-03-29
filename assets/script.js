@@ -50,7 +50,7 @@ $(document).ready(function() {
     });
 
     $(".navbar-toggler").on("click", function() {
-        if ($(".navbar-collapse").hasClass("show")) {
+        if ($(".navbar-collapse").hasClass("show") && $(window).scrollTop() == 0) {
             makeNavTransp();
         } else {
             makeNavSolid();
