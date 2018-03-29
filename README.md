@@ -12,7 +12,7 @@ Then, when you are at the event and greet someone, the system will register his 
 ## Team
 | Name            | ID     | Github                                        |
 | --------------- |--------| --------------------------------------------- |
-| Alessio Ciarcià |        | [ac-zero](https://github.com/ac-zero)         |
+| Alessio Ciarcià | 224705 | [ac-zero](https://github.com/ac-zero)         |
 | Matteo Corain   | 222981 | [mattecora](https://github.com/mattecora)     |
 | Andrea Cossio   | 224221 | [Andrea96ITA](https://github.com/Andrea96ITA) |
 | Raffaele Tuzzo  |        | [Raffot27](https://github.com/Raffot27)       |
