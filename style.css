@@ -75,6 +75,7 @@ a:hover {
 .team-pic {
     border-radius: 100%;
     margin: 5px;
+    max-width: 175px;
 }
 
 /* footer */
