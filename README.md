@@ -1,6 +1,6 @@
 # [Nice To Meet You](https://ami-2018.github.io/NTMY/)
 
-NTMY is an Ambient Intelligence system that aims to help students in university colleges to meet new friends by letting the users organize thematic events
+NTMY is an Ambient Intelligence system that aims to help students in university colleges to meet new friends by letting the users organize thematic events.
 ## Vision
 Imagine you are in a university college, where you can meet a great amount of people. NTMY, giving you the opportunity to organise thematic events in the college, will help you to meet new friends!
 

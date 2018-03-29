@@ -1,3 +1,5 @@
+var transHeight = 100;
+
 function makeNavTransp() {
     $(".navbar").css("background-color", "rgba(248, 252, 256, 0)");
     $(".navbar").removeClass("navbar-light").addClass("navbar-dark");
@@ -18,7 +20,7 @@ function scrollingActions() {
     }
 
     /* navbar coloring */
-    if (scrollTop > 100) {
+    if (scrollTop > transHeight) {
         makeNavSolid();
     } else {
         makeNavTransp();
@@ -50,7 +52,7 @@ $(document).ready(function() {
     });
 
     $(".navbar-toggler").on("click", function() {
-        if ($(".navbar-collapse").hasClass("show") && $(window).scrollTop() == 0) {
+        if ($(".navbar-collapse").hasClass("show") && $(window).scrollTop() == transHeight) {
             makeNavTransp();
         } else {
             makeNavSolid();
