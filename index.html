@@ -1,12 +1,216 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>NTMY - Nice To Meet You</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>NTMY project page</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dancing+Script:400|Lato:300,400">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-  <h1>NTMY - Nice To Meet You</h1>
+
+<body data-spy="scroll" data-target="#navbar-main" data-offset="100">
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-md fixed-top navbar-light" id="navbar-main">
+        <div class="container">
+            <a href="#" class="navbar-brand logo">NTMY</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#vision">Vision</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#ami">AmI</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#issues">Issues</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#team">Team</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- JUMBOTRON -->
+    <div class="jumbotron align-middle" id="home">
+        <div class="container align-middle text-light" id="home-container">
+            <h1>Nice To Meet You</h1>
+            <p class="lead">Your university college events organizer</p>
+            <a href="https://github.com/AmI-2018/NTMY">
+                <button class="btn" id="github-cta">
+                    <span class="social-icon" style="vertical-align: middle;"><i class="fa fa-github" aria-hidden="true"></i></span>
+                    <span style="vertical-align: middle;">Follow us on Github!</span>
+                </button>
+            </a>
+        </div>
+    </div>
+
+    <!-- MAIN -->
+    <div class="container" id="maindiv">
+        <!-- VISION -->
+        <div id="vision">
+            <h1>Project vision</h1>
+            <p>
+                Imagine you are in a college/campus, where you can meet a great amount of people. NTMY, giving you the opportunity to organise thematic events in the college, will help you to meet new friends!
+            </p>
+            <p>
+                Every user wears a coloured bracelet. With the app you can create a new meeting/event in the college to know new people (like see a football match in tv or do a card game). The system will then set a specific location for the event (considering the type of the event and the free college’s place) and it will assign it a colour; the user’s bracelet will turn that colour too (e.g. blue). Whenever a new event is created, people in the college with the same interests get a notification and, if they decide to participate at the blue event, their bracelet will become blue. The lights in the reserved room will also become blue to indicate that the room will host the blue event, and in the main streets of the college some indicators will color of blue, to easily find the place. 
+            </p>
+            <p>
+                The system also acts according to the category of the meeting (e.g. event with TV, board game event, generic discussion event, music event/dance, sporting event), adjusting the lights, the video (tv) and the audio.
+            </p>
+            <p>    
+                Then, when you are at the event and greet someone, the system will register his personal information (such as name, photo, phone number, Facebook/Instagram, ...), so that at the end of the day you can remember who you met. No more forgotten names or time lost in exchanging phone numbers!
+            </p>
+        </div>
+
+        <!-- AMI -->
+        <div id="ami">
+            <h1>Ambient intelligence features</h1>
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>Sensing</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <h2>Reasoning</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <h2>Acting</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <h2>Interacting</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- ISSUES -->
+        <div id="issues">
+            <h1>Open issues</h1>
+            <p>
+                Vivamus porta suscipit ex sed finibus. Cras sem elit, scelerisque hendrerit molestie non, vestibulum vitae libero. In hac habitasse platea dictumst. Nam eu arcu orci. Mauris aliquam, leo non blandit gravida, arcu dui porttitor lacus, in laoreet leo leo a ligula. Sed efficitur molestie lectus, a aliquet nunc porta ac. Fusce gravida felis vitae rhoncus pulvinar. Mauris fringilla, dolor finibus mollis scelerisque, augue quam tempus enim, eu efficitur tellus odio sit amet metus. Morbi in maximus lacus. Curabitur imperdiet vulputate vehicula. Sed eget mollis leo. Sed fringilla, est placerat imperdiet dignissim, nunc justo dapibus quam, non feugiat massa augue eget libero. Donec non neque imperdiet, aliquet ante ut, interdum dolor.
+            </p>
+        </div>
+
+        <!-- GROUP -->
+        <div id="team">
+            <h1>NTMY team</h1>
+            <div class="row">
+                <div class="col-6 col-md-3 text-center">
+                    <img class="img-fluid team-pic" src="https://picsum.photos/200" alt="" srcset="">
+                    <h2>Alessio Ciarcià</h2>
+                    <hr>
+                    <p>
+                        ID ...
+                        <br>
+                        SW developer
+                        <br>
+                        <a href="https://github.com/ac-zero"><i class="fa fa-github" aria-hidden="true"></i> ac-zero</a>
+                    </p>
+                </div>
+                <div class="col-6 col-md-3 text-center">
+                    <img class="img-fluid team-pic" src="https://picsum.photos/200" alt="" srcset="">
+                    <h2>Matteo Corain</h2>
+                    <hr>
+                    <p>
+                        ID 222981
+                        <br>
+                        SW developer
+                        <br>
+                        <a href="https://github.com/mattecora"><i class="fa fa-github" aria-hidden="true"></i> mattecora</a>
+                    </p>
+                </div>
+                <div class="col-6 col-md-3 text-center">
+                    <img class="img-fluid team-pic" src="https://picsum.photos/200" alt="" srcset="">
+                    <h2>Andrea Cossio</h2>
+                    <hr>
+                    <p>
+                        ID ...
+                        <br>
+                        SW developer
+                        <br>
+                        <a href="https://github.com/Andrea96ITA"><i class="fa fa-github" aria-hidden="true"></i> Andrea96ITA</a>
+                    </p>
+                </div>
+                <div class="col-6 col-md-3 text-center">
+                    <img class="img-fluid team-pic" src="https://picsum.photos/200" alt="" srcset="">
+                    <h2>Raffaele Tuzzo</h2>
+                    <hr>
+                    <p>
+                        ID ...
+                        <br>
+                        HW developer
+                        <br>
+                        <a href="https://github.com/Raffot27"><i class="fa fa-github" aria-hidden="true"></i> Raffot27</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div id="footer" class="bg-dark text-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-3 text-left" id="footer-col-left">
+                    <a href="#" class="logo">NTMY</a>
+                </div>
+
+                <div class="col-md-6" id="footer-col-center">
+                    <ul class="nav justify-content-center">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#vision">Vision</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#ami">AmI</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#issues">Issues</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#team">Team</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-md-3 text-right" id="footer-col-right">
+                    <span class="social-icon" style="font-size: 30px;"><a href="https://github.com/AmI-2018/NTMY"><i class="fa fa-github" aria-hidden="true"></i></a></span>
+                </div>
+            </div>
+
+            <small>This webpage was created using Bootstrap v4.0.0.</small>
+            <br>
+            <small>Copyright 2018, NTMY team</small>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

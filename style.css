@@ -1,0 +1,94 @@
+/* general */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Lato';
+    text-align: justify;
+}
+
+h1 {
+    font-family: 'Dancing Script';
+    font-size: 50px;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Dancing Script';
+    font-size: 30px;
+    text-align: center;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+/* navbar */
+
+#navbar-main {
+    transition: background-color .2s linear;
+    background-color: rgba(248, 252, 256, 0);
+}
+
+.logo {
+    font-family: 'Dancing Script';
+    font-size: 24px;
+}
+
+/* jumbotron */
+
+#home {
+    background-image: linear-gradient(rgba(0,0,0,0.3) 0%,rgba(0,0,0,0.3) 100%), url('handshake.jpg');
+    background-position: center;
+    background-size: cover;
+    border-radius: 0px;
+    min-height: 550px;
+    
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+#home>.container>h1 {
+    font-size: 80px;
+}
+
+#github-cta {
+    background-color: white;
+}
+
+.social-icon {
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 30px;
+}
+
+/* main content */
+
+#maindiv {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.team-pic {
+    border-radius: 100%;
+    margin: 5px;
+}
+
+/* footer */
+
+#footer {
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#footer a {
+    color: inherit;
+}
+
+#footer a:hover {
+    text-decoration: none;
+}
