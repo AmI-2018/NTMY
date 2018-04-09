@@ -10,9 +10,9 @@ The system also acts according to the category of the meeting (e.g. event with T
   
 Then, when you are at the event and greet someone, the system will register his personal information (such as name, photo, phone number, Facebook/Instagram, ...), so that at the end of the day you can remember who you met. No more forgotten names or time lost in exchanging phone numbers!
 ## Team
-| Name            | ID     | Github                                        |
-| --------------- |--------| --------------------------------------------- |
-| Alessio Ciarcià | 224705 | [ac-zero](https://github.com/ac-zero)         |
-| Matteo Corain   | 222981 | [mattecora](https://github.com/mattecora)     |
-| Andrea Cossio   | 224221 | [Andrea96ITA](https://github.com/Andrea96ITA) |
-| Raffaele Tuzzo  | 223261 | [Raffot27](https://github.com/Raffot27)       |
+| Name            | ID     | Github                                          |
+| --------------- |--------| ----------------------------------------------- |
+| Alessio Ciarcià | 224705 | [ac-zero](https://github.com/ac-zero)           |
+| Matteo Corain   | 222981 | [mattecora](https://github.com/mattecora)       |
+| Andrea Cossio   | 224221 | [AndreaCossio](https://github.com/AndreaCossio) |
+| Raffaele Tuzzo  | 223261 | [Raffot27](https://github.com/Raffot27)         |
