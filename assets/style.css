@@ -80,6 +80,27 @@ a:hover {
     font-size: 30px;
 }
 
+@media (min-width: 768px) {
+    .feat-ml-0 {
+        margin-left: 0%;
+    }
+    .feat-ml-1 {
+        margin-left: 1%;
+    }
+    .feat-ml-2 {
+        margin-left: 2%;
+    }
+    .feat-ml-3 {
+        margin-left: 3%;
+    }
+    .feat-ml-4 {
+        margin-left: 4%;
+    }
+    .feat-ml-5 {
+        margin-left: 5%;
+    }
+}
+
 .pic-container {
     max-width: 175px;
     margin: auto;
