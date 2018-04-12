@@ -83,21 +83,27 @@ a:hover {
 @media (min-width: 768px) {
     .feat-ml-0 {
         margin-left: 0%;
+        margin-right: 5%;
     }
     .feat-ml-1 {
         margin-left: 1%;
+        margin-right: 4%;
     }
     .feat-ml-2 {
         margin-left: 2%;
+        margin-right: 3%;
     }
     .feat-ml-3 {
         margin-left: 3%;
+        margin-right: 2%;
     }
     .feat-ml-4 {
         margin-left: 4%;
+        margin-right: 1%;
     }
     .feat-ml-5 {
         margin-left: 5%;
+        margin-right: 0%;
     }
 }
 
