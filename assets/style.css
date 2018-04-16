@@ -52,13 +52,14 @@ a:hover {
     background-position: center;
     background-size: cover;
     border-radius: 0px;
-
-    min-height: 80vh;
-    max-height: 100vh;
     
     display: flex;
     align-items: center;
     text-align: center;
+}
+
+#home-container {
+    padding: 10% 0%;
 }
 
 #home-container>h1 {
