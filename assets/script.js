@@ -18,7 +18,7 @@ function scrollingActions() {
     }
 
     /* navbar coloring */
-    if (scrollTop > transHeight) {
+    if (scrollTop > transHeight || $(".navbar-collapse").hasClass("show")) {
         makeNavSolid();
     } else {
         makeNavTransp();
