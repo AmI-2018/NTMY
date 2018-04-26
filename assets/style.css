@@ -13,6 +13,7 @@ h1 {
     font-family: 'Indie Flower';
     font-size: 50px;
     text-align: center;
+    margin-bottom: 50px;
 }
 
 h2 {
@@ -24,6 +25,22 @@ h2 {
 strong {
     font-family: 'Indie Flower';
 }
+
+.text-center {
+    margin-top:100px
+}
+
+.nav-link{
+    color:white;
+}
+
+.arch_row{
+    margin-top: 50px;
+}
+
+.list-group-item{
+    font-weight: bold;
+ }
 
 a:hover {
     text-decoration: none;
