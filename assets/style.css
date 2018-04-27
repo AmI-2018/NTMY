@@ -129,11 +129,6 @@ a {
     margin-top: 30px;
 }
 
-.arch-big-pic {
-    max-width: 600px;
-    margin: 10px 0px;
-}
-
 .arch-pic-container {
     max-width: 250px;
     margin: auto;
@@ -142,6 +137,31 @@ a {
 
 .arch-pic {
     border-radius: 100%;
+    margin: 5px 0px;
+}
+
+.arch-pic-big {
+    margin: 5px 0px;
+}
+
+.card {
+    border: none;
+}
+
+.card-header {
+    padding: 0px;
+    margin: 0px;
+    background-color: white;
+    border: none;
+}
+
+.card-body {
+    padding: 0px;
+    margin: 0px;
+}
+
+.btn-link {
+    text-decoration: none !important;
 }
 
 .list-group-item{
@@ -173,24 +193,4 @@ a {
 
 #footer a:hover {
     text-decoration: none;
-}
-
-.card {
-    border: none;
-}
-
-.card-header {
-    padding: 0px;
-    margin: 0px;
-    background-color: white;
-    border: none;
-}
-
-.card-body {
-    padding: 0px;
-    margin: 0px;
-}
-
-.btn-link {
-    text-decoration: none !important;
 }
