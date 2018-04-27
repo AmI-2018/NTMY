@@ -190,82 +190,92 @@
         <!-- ARCHITECTURE -->
         <div id="architecture" class="text-center">
             <h1>Architecture</h1>
-            <div class="arch_row">
-                <div class="row">
-                    <div class="col-md-8">
-                        <h2>System Architecture</h2>
-                        <p>Work in progress.</p>
-                    </div>
-                    <div class="col-md-4">
-                        <img src="images/architecture/background.png" class="img-fluid" alt="Responsive image">
-                    </div>
+
+            <div class="row arch-row">
+                <div class="col-md-4 order-md-2 arch-pic-container">
+                    <img src="images/architecture/background.png" class="img-fluid arch-img">
+                </div>
+                <div class="col-md-8">
+                    <h2>System Architecture</h2>
+                    <p>Work in progress.</p>
                 </div>
             </div>
-            <div class="arch_row">
-                <div class="row">
-                    <div class="col-md-4">
-                        <img src="images/architecture/raspberry.jpg" class="img-fluid" alt="Responsive image">
-                    </div>
-                    <div class="col-md-8">
-                        <h2>Hardware Architecture</h2>
-                        <ul class="list-group">
-                            <li class="list-group-item">Servers inside the rooms.</li>
+
+            <div class="row arch-row">
+                <div class="col-md-4 arch-pic-container">
+                    <img src="images/architecture/raspberry.jpg" class="img-fluid arch-img">
+                </div>
+                <div class="col-md-8">
+                    <h2>Hardware Architecture</h2>
+                    <ul class="list-group">
+                        <li class="list-group-item">Central server</li>
                             <ul>
-                                <li>A Raspberry server interfaced with the other devices in the room</li>
+                                <li>Used to store and retrieve users and events data</li>
                             </ul>
-                            <li class="list-group-item">Smart Panels in the aisles</li>
+                        <li class="list-group-item">Room client</li>
+                            <ul>
+                                <li>A Raspberry client interfaced with the other devices in the room</li>
+                            </ul>
+                        <li class="list-group-item">Bracelet</li>
+                            <ul>
+                                <li>Vibration on hanshake recognition</li>
+                                <li>Lights up of the color of the event</li>
+                                <li>Bluetooth to pair with the phone</li>
+                            </ul>
+                        <li class="list-group-item">Smart Panels in the aisles</li>
                             <ul>
                                 <li>Raspberry for the server</li>
                                 <li>A circuit with Led lights that will form an arrow pointing the direction</li>
                                 <li>Nfc reader that will read user's NFC tag</li>
                             </ul>
-                            <li class="list-group-item">Smart TV</li>
-                            <li class="list-group-item">Bracialet</li>
-                            <li class="list-group-item">Stereo System</li>
-                        </ul>
-                    </div>
+                        <li class="list-group-item">Philips Hue lights</li>
+                        <li class="list-group-item">Smart TV</li>
+                        <li class="list-group-item">Stereo System</li>
+                    </ul>
                 </div>
             </div>
-            <div class="arch_row">
-                <div class="row">
-                    <div class="col-md-8">
-                        <h2>Software Architecture</h2>
-                        <ul class="list-group">
-                            <li class="list-group-item">App for SmartPhone.</li>
+
+            <div class="row arch-row">
+                <div class="col-md-4 order-md-2 arch-pic-container">
+                    <img src="images/architecture/Python.svg.png" class="img-fluid arch-img">
+                </div>
+                <div class="col-md-8">
+                    <h2>Software Architecture</h2>
+                    <ul class="list-group">
+                        <li class="list-group-item">App for SmartPhone</li>
                             <ul>
                                 <li>Supports Android</li>
-                                <li>Events management functions (Create/ Sign in)</li>
+                                <li>Events management functions (Create/Join)</li>
                                 <li>Shows People's info</li>
                             </ul>
-                            <li class="list-group-item">Main Server Software</li>
-
+                        <li class="list-group-item">Main Server Software</li>
                             <ul>
                                 <li>Smartly assigns rooms to each event</li>
                                 <li>Calculate the route from user's room and the one of the event</li>
                                 <li>Generate movie and music playlists according to the users partecipating in that event</li>
                             </ul>
-                            <li class="list-group-item">Smart TV</li>
-                            <li class="list-group-item">Bracialet Software</li>
+                        <li class="list-group-item">Bracelet Software</li>
                             <ul>
                                 <li>Recognize the handshake and starts the data sharing</li>
                                 <li>Will light up with the event's color</li>
                             </ul>
-                        </ul>
-                    </div>
-                    <div class="col-md-4">
-                        <img src="images/architecture/Python.svg.png" class="img-fluid" alt="Responsive image">
-                    </div>
+                        <li class="list-group-item">Ambient control software</li>
+                            <ul>
+                                <li>Philips Hue light control</li>
+                                <li>Smart TV control</li>
+                                <li>Stereo control</li>
+                            </ul>
+                    </ul>
                 </div>
             </div>
-            <div class="arch_row">
-                <div class="row">
-                    <div class="col-md-4">
-                        <img src="images/architecture/network.jpg" class="img-fluid" alt="Responsive image">
-                    </div>
-                    <div class="col-md-8">
-                        <h2>Network Architecture</h2>
-                        <p>Work in progress.</p>
-                    </div>
+
+            <div class="row arch-row align-items-center">
+                <div class="col-md-4 arch-pic-container">
+                    <img src="images/architecture/network.jpg" class="img-fluid arch-img">
+                </div>
+                <div class="col-md-8">
+                    <h2>Network Architecture</h2>
+                    <p>Work in progress.</p>
                 </div>
             </div>
         </div>
@@ -335,7 +345,7 @@
             <h1>NTMY team</h1>
             <div class="row">
                 <div class="col-12 col-sm-6 col-md-3 text-center">
-                    <div class="pic-container">
+                    <div class="team-pic-container">
                         <img class="img-fluid team-pic" src="images/alessio_ciarcia.jpg" alt="" srcset="">
                     </div>
                     <h2>Alessio Ciarcià</h2>
@@ -350,7 +360,7 @@
                     </p>
                 </div>
                 <div class="col-12 col-sm-6 col-md-3 text-center">
-                    <div class="pic-container">
+                    <div class="team-pic-container">
                         <img class="img-fluid team-pic" src="images/matteo_corain.jpg" alt="" srcset="">
                     </div>
                     <h2>Matteo Corain</h2>
@@ -365,7 +375,7 @@
                     </p>
                 </div>
                 <div class="col-12 col-sm-6 col-md-3 text-center">
-                    <div class="pic-container">
+                    <div class="team-pic-container">
                         <img class="img-fluid team-pic" src="images/andrea_cossio.jpg" alt="" srcset="">
                     </div>
                     <h2>Andrea Cossio</h2>
@@ -380,7 +390,7 @@
                     </p>
                 </div>
                 <div class="col-12 col-sm-6 col-md-3 text-center">
-                    <div class="pic-container">
+                    <div class="team-pic-container">
                         <img class="img-fluid team-pic" src="images/raffaele_tuzzo.jpg" alt="" srcset="">
                     </div>
                     <h2>Raffaele Tuzzo</h2>

@@ -13,7 +13,8 @@ h1 {
     font-family: 'Indie Flower';
     font-size: 50px;
     text-align: center;
-    margin-bottom: 50px;
+    margin-top: 70px;
+    margin-bottom: 30px;
 }
 
 h2 {
@@ -25,22 +26,6 @@ h2 {
 strong {
     font-family: 'Indie Flower';
 }
-
-.text-center {
-    margin-top:100px
-}
-
-.nav-link{
-    color:white;
-}
-
-.arch_row{
-    margin-top: 50px;
-}
-
-.list-group-item{
-    font-weight: bold;
- }
 
 a:hover {
     text-decoration: none;
@@ -138,7 +123,21 @@ a:hover {
     }
 }
 
-.pic-container {
+.arch-row{
+    margin-top: 20px;
+}
+
+.arch-pic-container {
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+}
+
+.list-group-item{
+    font-weight: bold;
+ }
+
+.team-pic-container {
     max-width: 175px;
     margin: auto;
     text-align: center;
