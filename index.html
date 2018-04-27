@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <title>NTMY project page</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Indie+Flower|Lato:300,400">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css">
     <link rel="stylesheet" href="assets/style.css">
@@ -68,7 +68,7 @@
     <!-- MAIN -->
     <div class="container" id="maindiv">
         <!-- VISION -->
-        <div id="vision" class="text-center">
+        <div id="vision">
             <h1>Project vision</h1>
             <p>
                 Imagine you are in a university residence, where you can meet a great amount of people. NTMY, giving you the opportunity to organise thematic events, will help you to meet new friends!
@@ -85,7 +85,7 @@
         </div>
 
         <!-- AMI MAIN STEPS -->
-        <div id="ami-ms" class="text-center">
+        <div id="ami-ms">
             <h1>Ambient Intelligence main steps</h1>
             <div class="row justify-content-around">
                 <div class="col-md-5">
@@ -189,89 +189,187 @@
 
         <!-- ARCHITECTURE -->
         <div id="architecture" class="text-center">
-            <h1>Architecture</h1>
+            <h1>System architecture</h1>
 
-            <div class="row arch-row">
-                <div class="col-md-4 order-md-2 arch-pic-container">
-                    <img src="images/architecture/background.png" class="img-fluid arch-img">
-                </div>
-                <div class="col-md-8">
-                    <h2>System Architecture</h2>
-                    <p>Work in progress.</p>
-                </div>
-            </div>
+            <img src="images/architecture/architecture.png" class="img-fluid arch-big-pic">
 
-            <div class="row arch-row">
+            <div class="row arch-row align-items-center">
                 <div class="col-md-4 arch-pic-container">
-                    <img src="images/architecture/raspberry.jpg" class="img-fluid arch-img">
+                    <img src="images/architecture/hardware_sq.jpg" class="img-fluid arch-pic">
                 </div>
-                <div class="col-md-8">
+                <div class="col-md-8" id="accordion-hw">
                     <h2>Hardware Architecture</h2>
-                    <ul class="list-group">
-                        <li class="list-group-item">Central server</li>
-                            <ul>
-                                <li>Used to store and retrieve users and events data</li>
-                            </ul>
-                        <li class="list-group-item">Room client</li>
-                            <ul>
-                                <li>A Raspberry client interfaced with the other devices in the room</li>
-                            </ul>
-                        <li class="list-group-item">Bracelet</li>
-                            <ul>
-                                <li>Vibration on hanshake recognition</li>
-                                <li>Lights up of the color of the event</li>
-                                <li>Bluetooth to pair with the phone</li>
-                            </ul>
-                        <li class="list-group-item">Smart Panels in the aisles</li>
-                            <ul>
-                                <li>Raspberry for the server</li>
-                                <li>A circuit with Led lights that will form an arrow pointing the direction</li>
-                                <li>Nfc reader that will read user's NFC tag</li>
-                            </ul>
-                        <li class="list-group-item">Philips Hue lights</li>
-                        <li class="list-group-item">Smart TV</li>
-                        <li class="list-group-item">Stereo System</li>
-                    </ul>
+                    <div class="card">
+                        <div class="card-header" id="card-header-hw-1">
+                            <button class="btn btn-link" data-toggle="collapse" data-target="#card-body-hw-1">
+                                <strong>Central server</strong>
+                            </button>
+                        </div>
+                
+                        <div id="card-body-hw-1" class="collapse show" data-parent="#accordion-hw">
+                            <div class="card-body">
+                                <ul class="list-unstyled">
+                                    <li>PC running the Python Flask app</li>
+                                    <li>Used to store and retrieve users and events data</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header" id="card-header-hw-2">
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#card-body-hw-2">
+                                <strong>Room client</strong>
+                            </button>
+                        </div>
+                
+                        <div id="card-body-hw-2" class="collapse" data-parent="#accordion-hw">
+                            <div class="card-body">
+                                <ul class="list-unstyled">
+                                    <li>A Raspberry client interfaced with the other devices in the room</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header" id="card-header-hw-3">
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#card-body-hw-3">
+                                <strong>Bracelet</strong>
+                            </button>
+                        </div>
+                
+                        <div id="card-body-hw-3" class="collapse" data-parent="#accordion-hw">
+                            <div class="card-body">
+                                <ul class="list-unstyled">
+                                    <li>Vibration on hanshake recognition</li>
+                                    <li>Lights up of the color of the event</li>
+                                    <li>Bluetooth to pair with the phone</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header" id="card-header-hw-4">
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#card-body-hw-4">
+                                <strong>Smart Panels</strong>
+                            </button>
+                        </div>
+                
+                        <div id="card-body-hw-4" class="collapse" data-parent="#accordion-hw">
+                            <div class="card-body">
+                                <ul class="list-unstyled">
+                                    <li>Managed by a Raspberry board</li>
+                                    <li>A circuit with Led lights that will form an arrow pointing the direction</li>
+                                    <li>Nfc reader that will read user's NFC tag</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header" id="card-header-hw-5">
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#card-body-hw-5">
+                                <strong>Other hardware</strong>
+                            </button>
+                        </div>
+                
+                        <div id="card-body-hw-5" class="collapse" data-parent="#accordion-hw">
+                            <div class="card-body">
+                                <ul class="list-unstyled">
+                                    <li>Philips Hue lights</li>
+                                    <li>Smart TV</li>
+                                    <li>Stereo system</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <div class="row arch-row">
+            <div class="row arch-row align-items-center">
                 <div class="col-md-4 order-md-2 arch-pic-container">
-                    <img src="images/architecture/Python.svg.png" class="img-fluid arch-img">
+                    <img src="images/architecture/software_sq.jpg" class="img-fluid arch-pic">
                 </div>
-                <div class="col-md-8">
+                <div class="col-md-8" id="accordion-sw">
                     <h2>Software Architecture</h2>
-                    <ul class="list-group">
-                        <li class="list-group-item">App for SmartPhone</li>
-                            <ul>
-                                <li>Supports Android</li>
-                                <li>Events management functions (Create/Join)</li>
-                                <li>Shows People's info</li>
-                            </ul>
-                        <li class="list-group-item">Main Server Software</li>
-                            <ul>
-                                <li>Smartly assigns rooms to each event</li>
-                                <li>Calculate the route from user's room and the one of the event</li>
-                                <li>Generate movie and music playlists according to the users partecipating in that event</li>
-                            </ul>
-                        <li class="list-group-item">Bracelet Software</li>
-                            <ul>
-                                <li>Recognize the handshake and starts the data sharing</li>
-                                <li>Will light up with the event's color</li>
-                            </ul>
-                        <li class="list-group-item">Ambient control software</li>
-                            <ul>
-                                <li>Philips Hue light control</li>
-                                <li>Smart TV control</li>
-                                <li>Stereo control</li>
-                            </ul>
-                    </ul>
+                    
+                    <div class="card">
+                        <div class="card-header" id="card-header-sw-1">
+                            <button class="btn btn-link" data-toggle="collapse" data-target="#card-body-sw-1">
+                                <strong>Server software</strong>
+                            </button>
+                        </div>
+                
+                        <div id="card-body-sw-1" class="collapse show" data-parent="#accordion-sw">
+                            <div class="card-body">
+                                <ul class="list-unstyled">
+                                    <li>Smartly assigns rooms to each event</li>
+                                    <li>Calculate the route from user's room and the one of the event</li>
+                                    <li>Generate movie and music playlists according to the users partecipating in that event</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header" id="card-header-sw-2">
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#card-body-sw-2">
+                                <strong>Room control software</strong>
+                            </button>
+                        </div>
+                
+                        <div id="card-body-sw-2" class="collapse" data-parent="#accordion-sw">
+                            <div class="card-body">
+                                <ul class="list-unstyled">
+                                    <li>Adjusts lights, TV and audio to fit the category of the event</li>
+                                    <li>Adapts ambient characteristics dinamically</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header" id="card-header-sw-3">
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#card-body-sw-3">
+                                <strong>Smartphone app</strong>
+                            </button>
+                        </div>
+                
+                        <div id="card-body-sw-3" class="collapse" data-parent="#accordion-sw">
+                            <div class="card-body">
+                                <ul class="list-unstyled">
+                                    <li>Made for Android devices</li>
+                                    <li>Events management functions (create/join)</li>
+                                    <li>Shows information about the people you met</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header" id="card-header-sw-4">
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#card-body-sw-4">
+                                <strong>Bracelet software</strong>
+                            </button>
+                        </div>
+                
+                        <div id="card-body-sw-4" class="collapse" data-parent="#accordion-sw">
+                            <div class="card-body">
+                                <ul class="list-unstyled">
+                                    <li>Recognizes the handshake and starts the data sharing</li>
+                                    <li>Lights up with the event's color</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
             <div class="row arch-row align-items-center">
                 <div class="col-md-4 arch-pic-container">
-                    <img src="images/architecture/network.jpg" class="img-fluid arch-img">
+                    <img src="images/architecture/network_sq.jpg" class="img-fluid arch-pic">
                 </div>
                 <div class="col-md-8">
                     <h2>Network Architecture</h2>
@@ -283,8 +381,33 @@
         <!-- FEATURES -->
         <div id="features" class="text-center">
             <h1>Features</h1>
+
+            <ul class="nav nav-pills mb-3 justify-content-center" id="feat-pills-tab" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" id="feat-pills-tab-1" data-toggle="pill" href="#feat-pills-content-1" role="tab">Features 1</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="feat-pills-tab-2" data-toggle="pill" href="#feat-pills-content-2" role="tab">Features 2</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="feat-pills-tab-3" data-toggle="pill" href="#feat-pills-content-3" role="tab">Features 3</a>
+                </li>
+            </ul>
+            <div class="tab-content" id="feat-pills-content">
+                <div class="tab-pane fade show active" id="feat-pills-content-1" role="tabpanel">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </div>
+                <div class="tab-pane fade" id="feat-pills-content-2" role="tabpanel">
+                        Aenean a laoreet orci. Mauris facilisis ut metus tincidunt rutrum. Donec porta faucibus nisi ac pulvinar. Vivamus aliquam nibh tellus, eu luctus justo tempor quis. Praesent ac egestas felis, ac ultricies tellus. Aenean id massa quis neque elementum aliquam. Pellentesque vestibulum augue purus, quis sodales diam convallis et. Donec luctus lorem at sapien aliquet commodo. Maecenas a semper tortor. Sed sed semper odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec porta bibendum libero.
+                </div>
+                <div class="tab-pane fade" id="feat-pills-content-3" role="tabpanel">
+                        Mauris tempor ipsum justo, id ornare eros congue non. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vestibulum tincidunt consectetur purus, non sollicitudin enim tincidunt ut. Sed at orci sed velit ultricies elementum eu sed diam. Suspendisse molestie tempus nibh, vitae consequat ante consequat a. Ut sodales faucibus nunc, et mollis magna. Aenean ut diam ornare tortor luctus varius. Donec rhoncus in nisl sit amet interdum.
+                </div>
+            </div>
+
+            <!--
             <div class="row">
-                <div class="col-3">
+                <div class="col-md-3">
                     <div class="nav flex-column nav-pills bg-dark" id="v-pills-tab" role="tablist" aria-orientation="vertical">
                         <a class="nav-link active" data-toggle="pill" href="#feat_moving" role="tab" aria-controls="v-pills-home" aria-selected="true">Moving</a>
                         <a class="nav-link" data-toggle="pill" href="#feat_meeting" role="tab" aria-controls="v-pills-profile" aria-selected="false">Meeting</a>
@@ -292,7 +415,7 @@
                         <a class="nav-link" data-toggle="pill" href="#feat_other" role="tab" aria-controls="v-pills-settings" aria-selected="false">Other</a>
                     </div>
                 </div>
-                <div class="col-9">
+                <div class="col-md-9">
                     <div class="tab-content" id="v-pills-tabContent">
                         <div class="tab-pane fade show active" id="feat_moving" role="tabpanel" aria-labelledby="v-pills-home-tab">
                             <ul class="list-group">
@@ -321,8 +444,9 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div>-->
         </div>
+
         <!-- ISSUES -->
         <div id="issues" class="text-center">
             <h1>Open issues</h1>
@@ -346,7 +470,7 @@
             <div class="row">
                 <div class="col-12 col-sm-6 col-md-3 text-center">
                     <div class="team-pic-container">
-                        <img class="img-fluid team-pic" src="images/alessio_ciarcia.jpg" alt="" srcset="">
+                        <img class="img-fluid team-pic" src="images/team/alessio_ciarcia.jpg" alt="" srcset="">
                     </div>
                     <h2>Alessio Ciarcià</h2>
                     <p>
@@ -361,7 +485,7 @@
                 </div>
                 <div class="col-12 col-sm-6 col-md-3 text-center">
                     <div class="team-pic-container">
-                        <img class="img-fluid team-pic" src="images/matteo_corain.jpg" alt="" srcset="">
+                        <img class="img-fluid team-pic" src="images/team/matteo_corain.jpg" alt="" srcset="">
                     </div>
                     <h2>Matteo Corain</h2>
                     <p>
@@ -376,7 +500,7 @@
                 </div>
                 <div class="col-12 col-sm-6 col-md-3 text-center">
                     <div class="team-pic-container">
-                        <img class="img-fluid team-pic" src="images/andrea_cossio.jpg" alt="" srcset="">
+                        <img class="img-fluid team-pic" src="images/team/andrea_cossio.jpg" alt="" srcset="">
                     </div>
                     <h2>Andrea Cossio</h2>
                     <p>
@@ -391,7 +515,7 @@
                 </div>
                 <div class="col-12 col-sm-6 col-md-3 text-center">
                     <div class="team-pic-container">
-                        <img class="img-fluid team-pic" src="images/raffaele_tuzzo.jpg" alt="" srcset="">
+                        <img class="img-fluid team-pic" src="images/team/raffaele_tuzzo.jpg" alt="" srcset="">
                     </div>
                     <h2>Raffaele Tuzzo</h2>
                     <p>
@@ -450,14 +574,12 @@
                 </div>
             </div>
 
-            <small>This webpage was created using Bootstrap v4.0.0.</small>
-            <br>
             <small>&copy; Copyright 2018, NTMY team</small>
         </div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
     <script src="assets/script.js"></script>
 </body>
 </html>
