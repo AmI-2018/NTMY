@@ -1,4 +1,4 @@
-/* general */
+/* General */
 
 html {
     scroll-behavior: smooth;
@@ -32,7 +32,7 @@ a {
     text-decoration: none !important;
 }
 
-/* navbar */
+/* Navbar */
 
 #navbar-main {
     transition: background-color .2s linear;
@@ -48,7 +48,7 @@ a {
     outline: none;
 }
 
-/* jumbotron */
+/* Jumbotron */
 
 #home {
     background-image: linear-gradient(rgba(0,0,0,0.3) 0%,rgba(0,0,0,0.3) 100%), url('../images/handshake.jpg');
@@ -80,7 +80,7 @@ a {
     font-size: 30px;
 }
 
-/* main content */
+/* AmI steps */
 
 .ami-icon {
     font-size: 50px;
@@ -93,6 +93,8 @@ a {
     display: inline;
     vertical-align: middle;
 }
+
+/* AmI features */
 
 .ami-icon-small {
     font-size: 30px;
@@ -125,23 +127,31 @@ a {
     }
 }
 
+/* Architecture */
+
 .arch-row{
     margin-top: 30px;
 }
 
 .arch-pic-container {
-    max-width: 250px;
+    max-width: 175px;
     margin: auto;
     text-align: center;
 }
 
 .arch-pic {
     border-radius: 100%;
-    margin: 5px 0px;
+    margin: 10px 0px;
 }
 
+@media (min-width: 768px) { 
+    .arch-pic-big {
+        max-width: 600px;
+    }
+ }
+
 .arch-pic-big {
-    margin: 5px 0px;
+    margin-bottom: 20px;
 }
 
 .card {
@@ -164,9 +174,13 @@ a {
     text-decoration: none !important;
 }
 
+/* Open issues */
+
 .list-group-item{
     font-weight: bold;
  }
+
+/* Team */
 
 .team-pic-container {
     max-width: 175px;
@@ -176,10 +190,10 @@ a {
 
 .team-pic {
     border-radius: 100%;
-    margin: 5px 0px;
+    margin: 10px 0px;
 }
 
-/* footer */
+/* Footer */
 
 #footer {
     text-align: center;

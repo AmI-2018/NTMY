@@ -191,188 +191,189 @@
         <div id="architecture" class="text-center">
             <h1>System architecture</h1>
 
-            <img src="images/architecture/architecture.png" class="img-fluid arch-big-pic">
+            <img src="images/architecture/architecture.png" class="img-fluid arch-pic-big">
 
-            <div class="row arch-row align-items-center">
-                <div class="col-md-4 arch-pic-container">
-                    <img src="images/architecture/hardware_sq.jpg" class="img-fluid arch-pic">
-                </div>
-                <div class="col-md-8" id="accordion-hw">
-                    <h2>Hardware Architecture</h2>
-                    <div class="card">
-                        <div class="card-header" id="card-header-hw-1">
-                            <button class="btn btn-link" data-toggle="collapse" data-target="#card-body-hw-1">
-                                <strong>Central server</strong>
-                            </button>
-                        </div>
-                
-                        <div id="card-body-hw-1" class="collapse show" data-parent="#accordion-hw">
-                            <div class="card-body">
-                                <ul class="list-unstyled">
-                                    <li>PC running the Python Flask app</li>
-                                    <li>Used to store and retrieve users and events data</li>
-                                </ul>
-                            </div>
-                        </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="arch-pic-container">
+                        <img class="arch-pic img-fluid" src="images/architecture/hardware_sq.jpg">
                     </div>
+                    <h2>Hardware architecture</h2>
 
-                    <div class="card">
-                        <div class="card-header" id="card-header-hw-2">
-                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#card-body-hw-2">
-                                <strong>Room client</strong>
-                            </button>
-                        </div>
-                
-                        <div id="card-body-hw-2" class="collapse" data-parent="#accordion-hw">
-                            <div class="card-body">
-                                <ul class="list-unstyled">
-                                    <li>A Raspberry client interfaced with the other devices in the room</li>
-                                </ul>
+                    <div class="card-text" id="accordion-hw">
+                        <div class="card">
+                            <div class="card-header" id="card-header-hw-1">
+                                <button class="btn btn-link" data-toggle="collapse" data-target="#card-body-hw-1">
+                                    <strong>Central server</strong>
+                                </button>
                             </div>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <div class="card-header" id="card-header-hw-3">
-                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#card-body-hw-3">
-                                <strong>Bracelet</strong>
-                            </button>
-                        </div>
-                
-                        <div id="card-body-hw-3" class="collapse" data-parent="#accordion-hw">
-                            <div class="card-body">
-                                <ul class="list-unstyled">
-                                    <li>Vibration on hanshake recognition</li>
-                                    <li>Lights up of the color of the event</li>
-                                    <li>Bluetooth to pair with the phone</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <div class="card-header" id="card-header-hw-4">
-                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#card-body-hw-4">
-                                <strong>Smart Panels</strong>
-                            </button>
-                        </div>
-                
-                        <div id="card-body-hw-4" class="collapse" data-parent="#accordion-hw">
-                            <div class="card-body">
-                                <ul class="list-unstyled">
-                                    <li>Managed by a Raspberry board</li>
-                                    <li>A circuit with Led lights that will form an arrow pointing the direction</li>
-                                    <li>Nfc reader that will read user's NFC tag</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <div class="card-header" id="card-header-hw-5">
-                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#card-body-hw-5">
-                                <strong>Other hardware</strong>
-                            </button>
-                        </div>
-                
-                        <div id="card-body-hw-5" class="collapse" data-parent="#accordion-hw">
-                            <div class="card-body">
-                                <ul class="list-unstyled">
-                                    <li>Philips Hue lights</li>
-                                    <li>Smart TV</li>
-                                    <li>Stereo system</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row arch-row align-items-center">
-                <div class="col-md-4 order-md-2 arch-pic-container">
-                    <img src="images/architecture/software_sq.jpg" class="img-fluid arch-pic">
-                </div>
-                <div class="col-md-8" id="accordion-sw">
-                    <h2>Software Architecture</h2>
                     
-                    <div class="card">
-                        <div class="card-header" id="card-header-sw-1">
-                            <button class="btn btn-link" data-toggle="collapse" data-target="#card-body-sw-1">
-                                <strong>Server software</strong>
-                            </button>
-                        </div>
-                
-                        <div id="card-body-sw-1" class="collapse show" data-parent="#accordion-sw">
-                            <div class="card-body">
-                                <ul class="list-unstyled">
-                                    <li>Smartly assigns rooms to each event</li>
-                                    <li>Calculate the route from user's room and the one of the event</li>
-                                    <li>Generate movie and music playlists according to the users partecipating in that event</li>
-                                </ul>
+                            <div id="card-body-hw-1" class="collapse show" data-parent="#accordion-hw">
+                                <div class="card-body">
+                                    <ul class="list-unstyled">
+                                        <li>PC running the Python Flask app</li>
+                                        <li>Used to store and retrieve users and events data</li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
-                    </div>
-
-                    <div class="card">
-                        <div class="card-header" id="card-header-sw-2">
-                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#card-body-sw-2">
-                                <strong>Room control software</strong>
-                            </button>
-                        </div>
-                
-                        <div id="card-body-sw-2" class="collapse" data-parent="#accordion-sw">
-                            <div class="card-body">
-                                <ul class="list-unstyled">
-                                    <li>Adjusts lights, TV and audio to fit the category of the event</li>
-                                    <li>Adapts ambient characteristics dinamically</li>
-                                </ul>
+    
+                        <div class="card">
+                            <div class="card-header" id="card-header-hw-2">
+                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#card-body-hw-2">
+                                    <strong>Room client</strong>
+                                </button>
+                            </div>
+                    
+                            <div id="card-body-hw-2" class="collapse" data-parent="#accordion-hw">
+                                <div class="card-body">
+                                    <ul class="list-unstyled">
+                                        <li>A Raspberry client interfaced with the other devices in the room</li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
-                    </div>
-
-                    <div class="card">
-                        <div class="card-header" id="card-header-sw-3">
-                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#card-body-sw-3">
-                                <strong>Smartphone app</strong>
-                            </button>
-                        </div>
-                
-                        <div id="card-body-sw-3" class="collapse" data-parent="#accordion-sw">
-                            <div class="card-body">
-                                <ul class="list-unstyled">
-                                    <li>Made for Android devices</li>
-                                    <li>Events management functions (create/join)</li>
-                                    <li>Shows information about the people you met</li>
-                                </ul>
+    
+                        <div class="card">
+                            <div class="card-header" id="card-header-hw-3">
+                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#card-body-hw-3">
+                                    <strong>Bracelet</strong>
+                                </button>
+                            </div>
+                    
+                            <div id="card-body-hw-3" class="collapse" data-parent="#accordion-hw">
+                                <div class="card-body">
+                                    <ul class="list-unstyled">
+                                        <li>Vibration on hanshake recognition</li>
+                                        <li>Lights up of the color of the event</li>
+                                        <li>Bluetooth to pair with the phone</li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
-                    </div>
-
-                    <div class="card">
-                        <div class="card-header" id="card-header-sw-4">
-                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#card-body-sw-4">
-                                <strong>Bracelet software</strong>
-                            </button>
+    
+                        <div class="card">
+                            <div class="card-header" id="card-header-hw-4">
+                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#card-body-hw-4">
+                                    <strong>Smart Panels</strong>
+                                </button>
+                            </div>
+                    
+                            <div id="card-body-hw-4" class="collapse" data-parent="#accordion-hw">
+                                <div class="card-body">
+                                    <ul class="list-unstyled">
+                                        <li>Managed by a Raspberry board</li>
+                                        <li>A circuit with Led lights that will form an arrow pointing the direction</li>
+                                        <li>Nfc reader that will read user's NFC tag</li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
-                
-                        <div id="card-body-sw-4" class="collapse" data-parent="#accordion-sw">
-                            <div class="card-body">
-                                <ul class="list-unstyled">
-                                    <li>Recognizes the handshake and starts the data sharing</li>
-                                    <li>Lights up with the event's color</li>
-                                </ul>
+    
+                        <div class="card">
+                            <div class="card-header" id="card-header-hw-5">
+                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#card-body-hw-5">
+                                    <strong>Other hardware</strong>
+                                </button>
+                            </div>
+                    
+                            <div id="card-body-hw-5" class="collapse" data-parent="#accordion-hw">
+                                <div class="card-body">
+                                    <ul class="list-unstyled">
+                                        <li>Philips Hue lights</li>
+                                        <li>Smart TV</li>
+                                        <li>Stereo system</li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
+                
+                <div class="col-md-4">
+                    <div class="arch-pic-container">
+                        <img class="arch-pic img-fluid" src="images/architecture/software_sq.jpg">
+                    </div>
+                    <h2>Software architecture</h2>
 
-            <div class="row arch-row align-items-center">
-                <div class="col-md-4 arch-pic-container">
-                    <img src="images/architecture/network_sq.jpg" class="img-fluid arch-pic">
+                    <div id="accordion-sw">
+                        <div class="card">
+                            <div class="card-header" id="card-header-sw-1">
+                                <button class="btn btn-link" data-toggle="collapse" data-target="#card-body-sw-1">
+                                    <strong>Server software</strong>
+                                </button>
+                            </div>
+                    
+                            <div id="card-body-sw-1" class="collapse show" data-parent="#accordion-sw">
+                                <div class="card-body">
+                                    <ul class="list-unstyled">
+                                        <li>Smartly assigns rooms to each event</li>
+                                        <li>Calculate the route from user's room and the one of the event</li>
+                                        <li>Generate movie and music playlists according to the users partecipating in that event</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="card">
+                            <div class="card-header" id="card-header-sw-2">
+                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#card-body-sw-2">
+                                    <strong>Room control software</strong>
+                                </button>
+                            </div>
+                    
+                            <div id="card-body-sw-2" class="collapse" data-parent="#accordion-sw">
+                                <div class="card-body">
+                                    <ul class="list-unstyled">
+                                        <li>Adjusts lights, TV and audio to fit the category of the event</li>
+                                        <li>Adapts ambient characteristics dinamically</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="card">
+                            <div class="card-header" id="card-header-sw-3">
+                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#card-body-sw-3">
+                                    <strong>Smartphone app</strong>
+                                </button>
+                            </div>
+                    
+                            <div id="card-body-sw-3" class="collapse" data-parent="#accordion-sw">
+                                <div class="card-body">
+                                    <ul class="list-unstyled">
+                                        <li>Made for Android devices</li>
+                                        <li>Events management functions (create/join)</li>
+                                        <li>Shows information about the people you met</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="card">
+                            <div class="card-header" id="card-header-sw-4">
+                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#card-body-sw-4">
+                                    <strong>Bracelet software</strong>
+                                </button>
+                            </div>
+                    
+                            <div id="card-body-sw-4" class="collapse" data-parent="#accordion-sw">
+                                <div class="card-body">
+                                    <ul class="list-unstyled">
+                                        <li>Recognizes the handshake and starts the data sharing</li>
+                                        <li>Lights up with the event's color</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-8">
-                    <h2>Network Architecture</h2>
+                
+                <div class="col-md-4">
+                    <div class="arch-pic-container">
+                        <img class="arch-pic img-fluid" src="images/architecture/network_sq.jpg">
+                    </div>
+                    <h2>Network architecture</h2>
                     <p>Work in progress.</p>
                 </div>
             </div>
@@ -382,25 +383,25 @@
         <div id="features" class="text-center">
             <h1>Features</h1>
 
-            <ul class="nav nav-pills mb-3 justify-content-center" id="feat-pills-tab" role="tablist">
+            <ul class="nav nav-pills mb-3 justify-content-center" id="feat-pills-tab">
                 <li class="nav-item">
-                    <a class="nav-link active" id="feat-pills-tab-1" data-toggle="pill" href="#feat-pills-content-1" role="tab">Features 1</a>
+                    <a class="nav-link active" id="feat-pills-tab-1" data-toggle="pill" href="#feat-pills-content-1">Features 1</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" id="feat-pills-tab-2" data-toggle="pill" href="#feat-pills-content-2" role="tab">Features 2</a>
+                    <a class="nav-link" id="feat-pills-tab-2" data-toggle="pill" href="#feat-pills-content-2">Features 2</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" id="feat-pills-tab-3" data-toggle="pill" href="#feat-pills-content-3" role="tab">Features 3</a>
+                    <a class="nav-link" id="feat-pills-tab-3" data-toggle="pill" href="#feat-pills-content-3">Features 3</a>
                 </li>
             </ul>
             <div class="tab-content" id="feat-pills-content">
-                <div class="tab-pane fade show active" id="feat-pills-content-1" role="tabpanel">
+                <div class="tab-pane fade show active" id="feat-pills-content-1">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                 </div>
-                <div class="tab-pane fade" id="feat-pills-content-2" role="tabpanel">
+                <div class="tab-pane fade" id="feat-pills-content-2">
                         Aenean a laoreet orci. Mauris facilisis ut metus tincidunt rutrum. Donec porta faucibus nisi ac pulvinar. Vivamus aliquam nibh tellus, eu luctus justo tempor quis. Praesent ac egestas felis, ac ultricies tellus. Aenean id massa quis neque elementum aliquam. Pellentesque vestibulum augue purus, quis sodales diam convallis et. Donec luctus lorem at sapien aliquet commodo. Maecenas a semper tortor. Sed sed semper odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec porta bibendum libero.
                 </div>
-                <div class="tab-pane fade" id="feat-pills-content-3" role="tabpanel">
+                <div class="tab-pane fade" id="feat-pills-content-3">
                         Mauris tempor ipsum justo, id ornare eros congue non. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vestibulum tincidunt consectetur purus, non sollicitudin enim tincidunt ut. Sed at orci sed velit ultricies elementum eu sed diam. Suspendisse molestie tempus nibh, vitae consequat ante consequat a. Ut sodales faucibus nunc, et mollis magna. Aenean ut diam ornare tortor luctus varius. Donec rhoncus in nisl sit amet interdum.
                 </div>
             </div>
