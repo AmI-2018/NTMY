@@ -127,6 +127,18 @@ a {
     }
 }
 
+/* Features */
+#feat-pills-tab {
+    font-family: 'Indie Flower';
+}
+
+@media (min-width: 1000px) { 
+    .table-feat {
+        max-width: 1000px;
+        margin: auto;
+    }
+}
+
 /* Architecture */
 
 .arch-row{
@@ -148,7 +160,7 @@ a {
     .arch-pic-big {
         max-width: 600px;
     }
- }
+}
 
 .arch-pic-big {
     margin-bottom: 20px;
