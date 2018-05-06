@@ -213,16 +213,16 @@
 
             <ul class="nav nav-pills mb-3 justify-content-center" id="feat-pills-tab">
                 <li class="nav-item">
-                    <a class="nav-link active" id="feat-pills-tab-1" data-toggle="pill" href="#feat-pills-content-1">Room organization</a>
+                    <a class="nav-link active" id="feat-pills-tab-1" data-toggle="pill" href="#feat-pills-content-1"><i class="far fa-lightbulb"></i> Room organization</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" id="feat-pills-tab-2" data-toggle="pill" href="#feat-pills-content-2">Smartphone app</a>
+                    <a class="nav-link" id="feat-pills-tab-2" data-toggle="pill" href="#feat-pills-content-2"><i class="fas fa-mobile-alt"></i> Smartphone app</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" id="feat-pills-tab-3" data-toggle="pill" href="#feat-pills-content-3">Wearable</a>
+                    <a class="nav-link" id="feat-pills-tab-3" data-toggle="pill" href="#feat-pills-content-3"><i class="far fa-handshake"></i> Wearable</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" id="feat-pills-tab-4" data-toggle="pill" href="#feat-pills-content-4">Smart road sign</a>
+                    <a class="nav-link" id="feat-pills-tab-4" data-toggle="pill" href="#feat-pills-content-4"><i class="fas fa-map-signs"></i> Smart road sign</a>
                 </li>
             </ul>
 
@@ -250,11 +250,15 @@
                             </tr>
                             <tr>
                                 <th>1</th>
-                                <td>Reproduction of songs based on the tastes of the users in the room.</td>
+                                <td>Setting of the TV if is required by the kind of event.</td>
                             </tr>
                             <tr>
                                 <th>1</th>
-                                <td>Setting of the tv if is required.</td>
+                                <td>Music reproduction to fit the event's category.</td>
+                            </tr>
+                            <tr>
+                                <th>2</th>
+                                <td>Dynamic generation of video and audio playlist based on the tastes of the users in the room.</td>
                             </tr>
                         </tbody>
                     </table>
@@ -386,10 +390,7 @@
                     
                             <div id="card-body-hw-1" class="collapse" data-parent="#accordion-hw">
                                 <div class="card-body">
-                                    <ul class="list-unstyled">
-                                        <li>A PC with LAN access</li>
-                                        <li>Used to store and retrieve users and events data</li>
-                                    </ul>
+                                    The central server will be implemented with a PC with access to the LAN of the residence. It will be used to store and retrieve the data for both the users and the events.
                                 </div>
                             </div>
                         </div>
@@ -403,11 +404,7 @@
                     
                             <div id="card-body-hw-2" class="collapse" data-parent="#accordion-hw">
                                 <div class="card-body">
-                                    <ul class="list-unstyled">
-                                        <li>Raspberry Pi clients in every room</li>
-                                        <li>Controls the smart devices in the room</li>
-                                        <li>Interfaces with the server via WiFi connection</li>
-                                    </ul>
+                                    Every room will be managed by a Raspberry Pi client, with the role of controlling all the smart devices in the room, based on the information exchanged with the central server.
                                 </div>
                             </div>
                         </div>
@@ -415,16 +412,13 @@
                         <div class="card">
                             <div class="card-header" id="card-header-hw-3">
                                 <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#card-body-hw-3">
-                                    <strong>Smartphone</strong>
+                                    <strong>Smartphones</strong>
                                 </button>
                             </div>
                     
                             <div id="card-body-hw-3" class="collapse" data-parent="#accordion-hw">
                                 <div class="card-body">
-                                    <ul class="list-unstyled">
-                                        <li>Any kind of Android device</li>
-                                        <li>Needs Bluetooth to connect to the wearable and WiFi to connect to the server</li>
-                                    </ul>
+                                    Any kind of Android device can be used to interface with the system via the app, provided that it has Bluetooth to connect to the wearable and WiFi to connect to the server.
                                 </div>
                             </div>
                         </div>
@@ -432,16 +426,13 @@
                         <div class="card">
                             <div class="card-header" id="card-header-hw-4">
                                 <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#card-body-hw-4">
-                                    <strong>Wearable</strong>
+                                    <strong>Wearables</strong>
                                 </button>
                             </div>
                     
                             <div id="card-body-hw-4" class="collapse" data-parent="#accordion-hw">
                                 <div class="card-body">
-                                    <ul class="list-unstyled">
-                                        <li>Android Wear devices</li>
-                                        <li>Used to recognize handshakes among the users</li>
-                                    </ul>
+                                    Wearables will be Android Wear devices, used to recognize handshakes among the users and indicate the event the user is going to take part in.
                                 </div>
                             </div>
                         </div>
@@ -455,13 +446,7 @@
                     
                             <div id="card-body-hw-5" class="collapse" data-parent="#accordion-hw">
                                 <div class="card-body">
-                                    <ul class="list-unstyled">
-                                        <li>RGB leds driven by an Arduino board with a Bluetooth module</li>
-                                        <li>Forms an arrow pointing the direction when the user get close</li>
-                                        <li>Power supply to power the circuit</li>
-                                        <li>Relay for switching the arrow's direction</li>
-                                        <li>Current mirror stage to protect leds by overcurrents</li>
-                                    </ul>
+                                    The smart road signs will be implemented with RGB leds driven by an Arduino board with a Bluetooth module, that will form an arrow pointing the direction when the user get close.
                                 </div>
                             </div>
                         </div>
@@ -475,11 +460,7 @@
                     
                             <div id="card-body-hw-6" class="collapse" data-parent="#accordion-hw">
                                 <div class="card-body">
-                                    <ul class="list-unstyled">
-                                        <li>Philips Hue lights</li>
-                                        <li>Smart TV</li>
-                                        <li>Audio control system</li>
-                                    </ul>
+                                    Different kinds of smart devices will be present in the room, like Philips Hue Lights, smart TVs, audio control systems or door locking system.
                                 </div>
                             </div>
                         </div>
@@ -502,12 +483,7 @@
                     
                             <div id="card-body-sw-1" class="collapse" data-parent="#accordion-sw">
                                 <div class="card-body">
-                                    <ul class="list-unstyled">
-                                        <li>Uses Flask (API) and SQLite (database)</li>
-                                        <li>Smartly assigns rooms to each event</li>
-                                        <li>Calculate the route from user's room and the one of the event</li>
-                                        <li>Generate movie and music playlists according to the users partecipating in that event</li>
-                                    </ul>
+                                    The central server will run a Python application which will smartly assigns rooms to each event, calculate the route from user's room to the one of the event and generate movie and music playlists according to the users partecipating in that event. It will expose an API that will be used both by the smartphones and the room clients based on Flask and SQLite as the database backend.
                                 </div>
                             </div>
                         </div>
@@ -521,11 +497,7 @@
                     
                             <div id="card-body-sw-2" class="collapse" data-parent="#accordion-sw">
                                 <div class="card-body">
-                                    <ul class="list-unstyled">
-                                        <li>Uses requests to communicate with the server API</li>
-                                        <li>Adjusts lights, TV and audio to fit the category of the event</li>
-                                        <li>Adapts ambient characteristics dinamically</li>
-                                    </ul>
+                                    The room clients will run a Python application with the goal of adjusting lights, TV and audio to fit the category of the event and adapts the ambient characteristics dinamically. It will communicate with the server via the room API using the Python requests module and will make use of different kinds of Python modules to control the smart devices around.
                                 </div>
                             </div>
                         </div>
@@ -539,11 +511,7 @@
                     
                             <div id="card-body-sw-3" class="collapse" data-parent="#accordion-sw">
                                 <div class="card-body">
-                                    <ul class="list-unstyled">
-                                        <li>Based on Android Nearby APIs</li>
-                                        <li>Provides events management functions (create/join)</li>
-                                        <li>Shows information about the people you met</li>
-                                    </ul>
+                                    The smartphone app will be based on Android API level xx (Android x.x) and will use the Android Nearby API for point-to-point communications among devices. It will interface with the users API of the server and will provide events management functions (create/join) and show information about the people the users meet at the events.
                                 </div>
                             </div>
                         </div>
@@ -557,11 +525,7 @@
                     
                             <div id="card-body-sw-4" class="collapse" data-parent="#accordion-sw">
                                 <div class="card-body">
-                                    <ul class="list-unstyled">
-                                        <li>Based on Arduino/Wear APIs</li>
-                                        <li>Recognizes the handshake and starts the data sharing</li>
-                                        <li>Lights up with the event's color</li>
-                                    </ul>
+                                    The wearable application will be based on Android Wear 2.0 API (level xx) and will coordinate with the smartphone app to show on the device information about the event (like the event's colour) and activate the data transmission recognizing the handshake gesture.
                                 </div>
                             </div>
                         </div>
@@ -584,10 +548,7 @@
                     
                             <div id="card-body-nw-1" class="collapse" data-parent="#accordion-nw">
                                 <div class="card-body">
-                                    <ul class="list-unstyled">
-                                        <li>Static local IP address (no need for external communication)</li>
-                                        <li>Reachable via WLAN in every room</li>
-                                    </ul>
+                                    The central server will be reachable via LAN or WLAN in every room of the residence and will use a static IP address so that every device on the LAN will know how the URI to query to access the exposed APIs.
                                 </div>
                             </div>
                         </div>
@@ -601,10 +562,7 @@
                     
                             <div id="card-body-nw-2" class="collapse" data-parent="#accordion-nw">
                                 <div class="card-body">
-                                    <ul class="list-unstyled">
-                                        <li>Connected to WLAN with dynamic IP addresses</li>
-                                        <li>Uses LAN (wired or wireless) to control smart devices</li>
-                                    </ul>
+                                    The room clients will be connected to the LAN via a wired or wireless connection (no need for static IP, rooms will have an unique identifier to be recognized by the server) and will use different protocols to control the smart devices around it.
                                 </div>
                             </div>
                         </div>
@@ -618,10 +576,7 @@
                     
                             <div id="card-body-nw-3" class="collapse" data-parent="#accordion-nw">
                                 <div class="card-body">
-                                    <ul class="list-unstyled">
-                                        <li>Connected to WLAN with dynamic IP addresses</li>
-                                        <li>Uses Bluetooth to communicate with the wearable</li>
-                                    </ul>
+                                    The users' smartphones will use Bluetooth to communicate with their wearables and WiFi to access the server LAN. They will also use different kinds of nearby communication protocols to exchange data among users following a handshake, managed by the Nearby API.
                                 </div>
                             </div>
                         </div>
@@ -635,9 +590,7 @@
                     
                             <div id="card-body-nw-4" class="collapse" data-parent="#accordion-nw">
                                 <div class="card-body">
-                                    <ul class="list-unstyled">
-                                        <li>Connected to the phone via Bluetooth</li>
-                                    </ul>
+                                    The wearables will be connected via Bluetooth to the smartphones and will transparently (via the Wear API) use their WiFi connection if needed.
                                 </div>
                             </div>
                         </div>
@@ -651,11 +604,7 @@
                     
                             <div id="card-body-nw-5" class="collapse" data-parent="#accordion-nw">
                                 <div class="card-body">
-                                    <ul class="list-unstyled">
-                                        <li>Connected to WLAN with dynamic IP addresses</li>
-                                        <li>Uses LAN (wired or wireless) to take info on events' location</li>
-                                        <li>Uses Bluetooth connection to understand user's event</li>
-                                    </ul>
+                                    The smart panels will use a wireless or wired link to access the server LAN and take info on events' location and will use Bluetooth connection to identify the users nearby and provide him the correct direction.
                                 </div>
                             </div>
                         </div>
@@ -667,6 +616,7 @@
         <!-- COMPONENTS -->
         <div id="components" class="text-center">
             <h1>System components</h1>
+
             <div class="row">
                 <div class="col-md-6">
                     <div class="arch-pic-container">

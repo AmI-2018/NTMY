@@ -130,6 +130,7 @@ a {
 /* Features */
 #feat-pills-tab {
     font-family: 'Indie Flower';
+    font-size: 18px;
 }
 
 @media (min-width: 1000px) { 
