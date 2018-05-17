@@ -1,0 +1,159 @@
+/* General */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    text-align: justify;
+}
+
+h1 {
+    text-align: center;
+    font-weight: 700;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 2em;
+}
+
+h3 {
+    font-weight: 500;
+}
+
+table {
+    text-align: center;
+}
+
+/* Navbar */
+
+.navbar-brand {
+    font-size: 1.5em !important;
+}
+
+/* Jumbotron */
+
+.big-logo {
+    font-size: 100px;
+}
+
+/* AmI main steps */
+
+.ami-title {
+    vertical-align: middle;
+    display: inline;
+}
+
+.ami-icon {
+    vertical-align: middle;
+    display: inline;
+    font-size: 3em;
+    margin: 0px 5px;
+}
+
+/* AmI features */
+
+.ami-icon-small {
+    font-size: 2em;
+}
+
+@media (min-width: 768px) {
+    .feat-ml-0 {
+        margin-left: 0%;
+        margin-right: 5%;
+    }
+    .feat-ml-1 {
+        margin-left: 1%;
+        margin-right: 4%;
+    }
+    .feat-ml-2 {
+        margin-left: 2%;
+        margin-right: 3%;
+    }
+    .feat-ml-3 {
+        margin-left: 3%;
+        margin-right: 2%;
+    }
+    .feat-ml-4 {
+        margin-left: 4%;
+        margin-right: 1%;
+    }
+    .feat-ml-5 {
+        margin-left: 5%;
+        margin-right: 0%;
+    }
+}
+
+/* Cards */
+
+.card {
+    padding: 0px;
+}
+
+.card .card-body {
+    padding: 1.25rem;
+    min-height: 0px;
+}
+
+.card .card-title {
+    margin-top: .75rem;
+}
+
+.card .card-header {
+    background-color: white;
+    border: none;
+}
+
+.card .card-header-img {
+    height: 30vh;
+    background-position: center;
+    background-size: cover;
+}
+
+.bg-hw {
+    background: linear-gradient(rgba(44, 44, 44, 0.2), rgba(224, 23, 3, 0.6)), url('../../images/architecture/hardware.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.bg-sw {
+    background: linear-gradient(rgba(44, 44, 44, 0.2), rgba(224, 23, 3, 0.6)), url('../../images/architecture/software.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.bg-nw {
+    background: linear-gradient(rgba(44, 44, 44, 0.2), rgba(224, 23, 3, 0.6)), url('../../images/architecture/network.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+/* Nav tabs */
+
+.nav-tabs>.nav-item>.nav-link.active {
+    background-color: #f96332;
+    color: white;
+    border: none;
+}
+
+.nav-tabs>.nav-item>.nav-link.active:hover {
+    box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.17);
+}
+
+/* Architecture */
+.diagram {
+    height: 60vh;
+}
+
+/* Team */
+
+.team-pic-container {
+    max-width: 200px;
+    margin: auto;
+    text-align: center;
+}
+
+.team-pic {
+    margin: 10px 0px;
+}

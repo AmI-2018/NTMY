@@ -4,26 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
     <title>NTMY project page</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Indie+Flower|Lato:300,400">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css">
-    <link rel="stylesheet" href="assets/style.css">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Fonts and icons -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet">
+
+    <!-- Vis.js CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.css" rel="stylesheet">
+
+    <!-- Now UI CSS -->
+    <link href="assets/css/now-ui-kit.css?v=1.1.0" rel="stylesheet">
+
+    <!-- Own CSS -->
+    <link href="assets/css/style.css" rel="stylesheet">
 </head>
 
-<body data-spy="scroll" data-target="#navbar-main" data-offset="100">
+<body class="sidebar-collapse">
     <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-md fixed-top navbar-dark" id="navbar-main">
+    <nav class="navbar navbar-expand-lg bg-primary fixed-top navbar-transparent" color-on-scroll="0">
         <div class="container">
-            <a href="#" class="navbar-brand logo">NTMY</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="navbar-translate">
+                <a class="navbar-brand" href="#" rel="tooltip" data-placement="bottom" target="_blank">
+                    <i class="far fa-handshake"></i> NTMY
+                </a>
+                <button class="navbar-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-bar bar1"></span>
+                    <span class="navbar-toggler-bar bar2"></span>
+                    <span class="navbar-toggler-bar bar3"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse justify-content-end" id="navigation" data-nav-image="images/blur.jpg">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="#home">Home</a>
+                        <a class="nav-link" href="#">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#vision">Vision</a>
@@ -57,556 +74,441 @@
         </div>
     </nav>
 
-    <!-- JUMBOTRON -->
-    <div class="jumbotron align-middle" id="home">
-        <div class="container align-middle text-light" id="home-container">
-            <h1>Nice To Meet You</h1>
-            <p class="lead">Your university college events organizer</p>
-            <a href="https://github.com/AmI-2018/NTMY">
-                <button class="btn" id="github-cta">
-                    <span class="social-icon" style="vertical-align: middle;"><i class="fab fa-github"></i></span>
-                    <span style="vertical-align: middle;">Follow us on Github!</span>
-                </button>
-            </a>
+    <!-- CONTENT -->
+    <div class="wrapper">
+        <!-- JUMBOTRON -->
+        <div class="page-header clear-filter" filter-color="orange">
+            <div class="page-header-image" style="background-image: url('images/handshake.jpg')"></div>
+            <div class="container">
+                <div class="content-center brand">
+                    <i class="far fa-handshake big-logo"></i>
+                    <h1>Nice to meet you</h1>
+                    <h3>Your college events organizer</h3>
+                    <a href="https://github.com/AmI-2018/NTMY-code">
+                        <button class="btn btn-primary" id="github-cta">
+                            <span class="social-icon" style="vertical-align: middle;"><i class="fab fa-github"></i></span>
+                            <span style="vertical-align: middle;">Check out our work on Github!</span>
+                        </button>
+                    </a>
+                </div>
+            </div>
         </div>
-    </div>
 
-    <!-- MAIN -->
-    <div class="container" id="maindiv">
         <!-- VISION -->
-        <div id="vision">
-            <h1>Project vision</h1>
-            <p>
-                Imagine you are in a university residence, where you can meet a great amount of people. NTMY, giving you the opportunity to organise thematic events, will help you to meet new friends!
-            </p>
-            <p>
-                Every user wears a coloured bracelet. With the app you can create a new meeting/event in the college to know new people (like see a football match in tv or do a card game). The system will then set a specific location for the event (considering the type of the event and the free college’s place) and it will assign it a colour; the user’s bracelet will turn that colour too (e.g. blue). Whenever a new event is created, people in the college with the same interests get a notification and, if they decide to participate at the blue event, their bracelet will become blue. The lights in the reserved room will also become blue to indicate that the room will host the blue event, and in the main streets of the college some indicators will color of blue, to easily find the place. 
-            </p>
-            <p>
-                The system also acts according to the category of the meeting (e.g. event with TV, board game event, generic discussion event, music event/dance, sporting event), adjusting the lights, the video (tv) and the audio.
-            </p>
-            <p>    
-                Then, when the user is at the event and greet someone else, the system will detect (via your bracelet) the interaction and register his personal information (such as name, photo, phone number, Facebook/Instagram, ...) on the app, so that at the end of the day the user can always remember who he met. No more forgotten names or time lost in exchanging phone numbers!
-            </p>
+        <div class="section" id="vision">
+            <div class="container">
+                <h1>Project vision</h1>
+                <p>
+                    Imagine you are in a university residence, where you can meet a great amount of people. NTMY, giving you the opportunity to organise thematic events, will help you to meet new friends!
+                </p>
+                <p>
+                    The user can interact with the system using a wearable and a smartphone. With the app you can create a new meeting/event in the residence to meet new people (like watch a football match on tv or do a card game). The system will then set a specific location for the event (considering the type of the event and the free residence's place) and it will assign it a colour; the user’s wearable will turn that colour too (e.g. blue). Whenever a new event is created, people in the college with the same interests get a notification and, if they decide to participate at the blue event, their wearables will become blue as well. The lights in the reserved room will also become blue to indicate that the room will host the blue event, and in the main streets of the residence some indicators will color of blue, to easily find the place.
+                </p>
+                <p>
+                    The system also acts according to the category of the meeting (e.g. event with TV, board game event, generic discussion event, music event/dance, sporting event), adjusting the lights, the video (tv) and the audio.
+                </p>
+                <p>
+                    Then, when you are at the event and greet someone, the system will recognise your action and register the personal information of your new friend (such as name, photo, phone number, Facebook/Instagram, ...), so that at the end of the day you can remember who you met. No more forgotten names or time lost in exchanging phone numbers!
+                </p>
+            </div>      
         </div>
 
         <!-- AMI MAIN STEPS -->
-        <div id="ami-ms">
-            <h1>Ambient Intelligence main steps</h1>
-            <div class="row justify-content-around">
-                <div class="col-md-5">
-                    <div class="text-center">
-                        <i class="far fa-handshake text-dark ami-icon"></i>
-                        <h2 class="ami-title">Sensing</h2>
+        <div class="section" id="ami-ms">
+            <div class="container">
+                <h1>Ambient Intelligence main steps</h1>
+                <div class="row justify-content-around">
+                    <div class="col-md-5 card">
+                        <div class="card-header card-title text-center">
+                            <i class="far fa-handshake ami-icon"></i>
+                            <h2 class="ami-title">Sensing</h2>
+                        </div>
+                        <div class="card-body">
+                            Each user has got a coloured bracelet, which is capable of registering all the new people that the user has met at the event by transmitting and receiving some data (such as an ID code) from/to the nearby devices. The input for starting the communication is given by the handshake between two users.
+                        </div>
                     </div>
-                    <p>
-                        Each user has got a coloured bracelet, which is capable of registering all the new people that the user has met at the event by transmitting and receiving some data (such as an ID code) from/to the nearby devices. The input for starting the communication is given by the handshake between two users.
-                    </p>
-                </div>
-                <div class="col-md-5">
-                    <div class="text-center">
-                        <i class="far fa-question-circle text-dark ami-icon"></i>
-                        <h2 class="ami-title">Reasoning</h2>
+
+                    <div class="col-md-5 card">
+                        <div class="card-header card-title text-center">
+                            <i class="far fa-question-circle ami-icon"></i>
+                            <h2 class="ami-title">Reasoning</h2>
+                        </div>
+                        <div class="card-body">
+                            When an user creates a new event/meeting, the system chooses the most suitable place available to host it according to the kind of event, and assigns it a colour. According to the category of the event, the system is also able to determine how to correctly set the ambient characteristics such as lights, video and audio.
+                        </div>
                     </div>
-                    <p>
-                        When an user creates a new event/meeting, the system chooses the most suitable place available to host it according to the kind of event, and assigns it a colour. According to the category of the event, the system is also able to determine how to correctly set the ambient characteristics such as lights, video and audio.
-                    </p>
-                </div>
-                <div class="col-md-5">
-                    <div class="text-center">
-                        <i class="far fa-lightbulb text-dark ami-icon"></i>
-                        <h2 class="ami-title">Acting</h2>
+
+                    <div class="col-md-5 card">
+                        <div class="card-header card-title text-center">
+                            <i class="far fa-lightbulb ami-icon"></i>
+                            <h2 class="ami-title">Acting</h2>
+                        </div>
+                        <div class="card-body">
+                            Once the system has chosen the event's colour, it will adjust some lights in the selected place and some markers around the college to match that colour. It can also set the TV program, the audio and the right illumination based on the kind of event.
+                        </div>
                     </div>
-                    <p>
-                         Once the system has chosen the event's colour, it will adjust some lights in the selected place and some markers around the college to match that colour. It can also set the TV program, the audio and the right illumination based on the kind of event.
-                    </p>
-                </div>
-                <div class="col-md-5">
-                    <div class="text-center">
-                        <i class="fas fa-mobile-alt text-dark ami-icon"></i>
-                        <h2 class="ami-title">Interacting</h2>
+
+                    <div class="col-md-5 card">
+                        <div class="card-header card-title text-center">
+                            <i class="fas fa-mobile-alt ami-icon"></i>
+                            <h2 class="ami-title">Interacting</h2>
+                        </div>
+                        <div class="card-body">
+                            The user can interact with the system with a mobile app, which lets the user create new events, choose what info to share with the others and check the list of the new contacts he met at the events, with all the info they shared.
+                        </div>
                     </div>
-                    <p>         
-                        The user can interact with the system with a mobile app, which lets the user create new events, choose what info to share with the others and check the list of the new contacts he met at the events, with all the info they shared.
-                    </p>
                 </div>
             </div>
         </div>
 
         <!-- AMI FEATURES -->
-        <div id="ami-f" class="text-center">
-            <h1>Ambient Intelligence features</h1>
-            <h2>NTMY is...</h2>
+        <div id="ami-f" class="section text-center">
+            <div class="container">
+                <h1>Ambient Intelligence features</h1>
+                <p>NTMY is...</p>
 
-            <div class="row align-items-center justify-content-center feat-ml-0">
-                <div class="col-2">
-                    <i class="far fa-handshake text-dark ami-icon-small"></i>
+                <div class="row align-items-center justify-content-center feat-ml-0">
+                    <div class="col-2">
+                        <i class="far fa-handshake ami-icon-small"></i>
+                    </div>
+                    <div class="col-8 text-justify">
+                        <p>...<strong>sensitive</strong>, because it will detect when you are shaking someone's hand.</p>
+                    </div>
                 </div>
-                <div class="col-8 text-justify">
-                    <p>...<strong>sensitive</strong>, because it will detect when you are shaking someone's hand.</p>
-                </div>
-            </div>
 
-            <div class="row align-items-center justify-content-center feat-ml-1">
-                <div class="col-2">
-                    <i class="far fa-comments text-dark ami-icon-small"></i>
+                <div class="row align-items-center justify-content-center feat-ml-1">
+                    <div class="col-2">
+                        <i class="far fa-comments ami-icon-small"></i>
+                    </div>
+                    <div class="col-8 text-justify">
+                        <p>...<strong>responsive</strong>, because it will suggest you the events that fit with your interests.</p>
+                    </div>
                 </div>
-                <div class="col-8 text-justify">
-                    <p>...<strong>responsive</strong>, because it will suggest you the events that fit with your interests.</p>
-                </div>
-            </div>
 
-            <div class="row align-items-center justify-content-center feat-ml-2">
-                <div class="col-2">
-                    <i class="fas fa-expand-arrows-alt text-dark ami-icon-small"></i>
+                <div class="row align-items-center justify-content-center feat-ml-2">
+                    <div class="col-2">
+                        <i class="fas fa-expand-arrows-alt ami-icon-small"></i>
+                    </div>
+                    <div class="col-8 text-justify">
+                        <p>...<strong>adaptive</strong>, because it will adapt the environment according to the scheduled event.</p>
+                    </div>
                 </div>
-                <div class="col-8 text-justify">
-                    <p>...<strong>adaptive</strong>, because it will adapt the environment according to the scheduled event.</p>
-                </div>
-            </div>
 
-            <div class="row align-items-center justify-content-center feat-ml-3">
-                <div class="col-2">
-                    <i class="fas fa-eye-slash text-dark ami-icon-small"></i>
+                <div class="row align-items-center justify-content-center feat-ml-3">
+                    <div class="col-2">
+                        <i class="fas fa-eye-slash ami-icon-small"></i>
+                    </div>
+                    <div class="col-8 text-justify">
+                        <p>...<strong>transparent</strong>, because the interaction is as natural as a handshake.</p>
+                    </div>
                 </div>
-                <div class="col-8 text-justify">
-                    <p>...<strong>transparent</strong>, because the interaction is as natural as a handshake.</p>
-                </div>
-            </div>
 
-            <div class="row align-items-center justify-content-center feat-ml-4">
-                <div class="col-2">
-                    <i class="fas fa-globe text-dark ami-icon-small"></i>
+                <div class="row align-items-center justify-content-center feat-ml-4">
+                    <div class="col-2">
+                        <i class="fas fa-globe ami-icon-small"></i>
+                    </div>
+                    <div class="col-8 text-justify">
+                        <p>...<strong>ubiquitous</strong>, because you can interact with it everywhere in order to find the way to your event.</p>
+                    </div>
                 </div>
-                <div class="col-8 text-justify">
-                    <p>...<strong>ubiquitous</strong>, because you can interact with it everywhere in order to find the way to your event.</p>
-                </div>
-            </div>
 
-            <div class="row align-items-center justify-content-center feat-ml-5">
-                <div class="col-2">
-                    <i class="fas fa-cogs text-dark ami-icon-small"></i>
-                </div>
-                <div class="col-8 text-justify">
-                    <p>...<strong>intelligent</strong>, because it will smartly allocate the available rooms according to the types of events.</p>
+                <div class="row align-items-center justify-content-center feat-ml-5">
+                    <div class="col-2">
+                        <i class="fas fa-cogs ami-icon-small"></i>
+                    </div>
+                    <div class="col-8 text-justify">
+                        <p>...<strong>intelligent</strong>, because it will smartly allocate the available rooms according to the types of events.</p>
+                    </div>
                 </div>
             </div>
         </div>
 
         <!-- GOAL -->
-        <div id="goal">
-            <h1>Project goal</h1>
-            <p>
-                The goal of the project is to build a system that can be used in university residences to smartly organize event in order to let people meet others with the same interests. For this purpose, it makes use of different kinds of electronic devices such as PCs, mini computers, smartphones and wearables, all of which contribute to solve different problems that can be experienced during the organization of an event.
-            </p>
-            <p>
-                The first problem our system tries to solve is about the selection of the most suitable room for the category of the event and the preparation of the ambient in order to make it as enjoyable as possible. The system is able to control the lights, the TV and the audio systems intelligently according to the category of the event and the users taking part of it.
-            </p>
-            <p>
-                Another problem our systems aims to solve is related to the personal information that people share when they first meet, that are often not so easy to remember. In order not to spoil the simplicity of the interaction, our system makes use of a smartwatch capable of recognizing the users when they handshake, exchanging their personal information that they can later recall on their phone if needed.
-            </p>
+        <div id="goal" class="section">
+            <div class="container">
+                <h1>Project goal</h1>
+                <p>
+                    The goal of the project is to build a system that can be used in university residences to smartly organize event in order to let people meet others with the same interests. For this purpose, it makes use of different kinds of electronic devices such as PCs, mini computers, smartphones and wearables, all of which contribute to solve different problems that can be experienced during the organization of an event.
+                </p>
+                <p>
+                    The first problem our system tries to solve is about the selection of the most suitable room for the category of the event and the preparation of the ambient in order to make it as enjoyable as possible. The system is able to control the lights, the TV and the audio systems intelligently according to the category of the event and the users taking part of it.
+                </p>
+                <p>
+                    Another problem our systems aims to solve is related to the personal information that people share when they first meet, that are often not so easy to remember. In order not to spoil the simplicity of the interaction, our system makes use of a smartwatch capable of recognizing the users when they handshake, exchanging their personal information that they can later recall on their phone if needed.
+                </p>
+            </div>
         </div>
 
         <!-- FEATURES -->
-        <div id="features" class="text-center">
-            <h1>Features</h1>
+        <div id="features" class="section">
+            <div class="container">
+                <h1>Features</h1>
+                <ul class="nav nav-tabs justify-content-center" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" data-toggle="tab" href="#feat-tab-1" role="tab">
+                            <i class="far fa-lightbulb"></i> Room organization
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#feat-tab-2" role="tab">
+                            <i class="fas fa-mobile-alt"></i> Smartphone app
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#feat-tab-3" role="tab">
+                            <i class="far fa-handshake"></i> Wearable</a>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#feat-tab-4" role="tab">
+                            <i class="fas fa-map-signs"></i> Smart road sign</a>
+                        </a>
+                    </li>
+                </ul>
 
-            <ul class="nav nav-pills mb-3 justify-content-center" id="feat-pills-tab">
-                <li class="nav-item">
-                    <a class="nav-link active" id="feat-pills-tab-1" data-toggle="pill" href="#feat-pills-content-1"><i class="far fa-lightbulb"></i> Room organization</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" id="feat-pills-tab-2" data-toggle="pill" href="#feat-pills-content-2"><i class="fas fa-mobile-alt"></i> Smartphone app</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" id="feat-pills-tab-3" data-toggle="pill" href="#feat-pills-content-3"><i class="far fa-handshake"></i> Wearable</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" id="feat-pills-tab-4" data-toggle="pill" href="#feat-pills-content-4"><i class="fas fa-map-signs"></i> Smart road sign</a>
-                </li>
-            </ul>
+                <div class="row justify-content-center">
+                    <div class="tab-content text-center col-md-10">
+                        <div class="tab-pane active" id="feat-tab-1" role="tabpanel">
+                            <table class="table table-sm table-feat">
+                                <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Priority</th>
+                                        <th>Description</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th>RO1</th>
+                                        <td>1</td>
+                                        <td>Smart allocation of the rooms to the events.</td>
+                                    </tr>
+                                    <tr>
+                                        <th>RO2</th>
+                                        <td>1</td>
+                                        <td>Reporting the prenotation-state by the color of the lights in the room.</td>
+                                    </tr>
+                                    <tr>
+                                        <th>RO3</th>
+                                        <td>1</td>
+                                        <td>Adjustment of the intensity of the room's lights.</td>
+                                    </tr>
+                                    <tr>
+                                        <th>RO4</th>
+                                        <td>2</td>
+                                        <td>Setting of the TV program, if is required by the event.</td>
+                                    </tr>
+                                    <tr>
+                                        <th>RO5</th>
+                                        <td>2</td>
+                                        <td>Music reproduction to fit the event's category.</td>
+                                    </tr>
+                                    <tr>
+                                        <th>RO6</th>
+                                        <td>3</td>
+                                        <td>Dynamic generation of video and audio playlist based on the tastes of the users in the room.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
 
-            <div class="tab-content" id="feat-pills-content">
-                <div class="tab-pane fade show active" id="feat-pills-content-1">
-                    <table class="table table-sm table-feat">
-                        <thead>
-                            <tr>
-                                <th>Priority</th>
-                                <th>Description</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th>1</th>
-                                <td>Smart allocation of the rooms to the events.</td>
-                            </tr>
-                            <tr>
-                                <th>1</th>
-                                <td>Reporting the prenotation-state by lights in the room.</td>
-                            </tr>
-                            <tr>
-                                <th>1</th>
-                                <td>Adjustment of the intensity of the room's lights.</td>
-                            </tr>
-                            <tr>
-                                <th>1</th>
-                                <td>Setting of the TV program, if is required by the event.</td>
-                            </tr>
-                            <tr>
-                                <th>1</th>
-                                <td>Music reproduction to fit the event's category.</td>
-                            </tr>
-                            <tr>
-                                <th>2</th>
-                                <td>Dynamic generation of video and audio playlist based on the tastes of the users in the room.</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
+                        <div class="tab-pane" id="feat-tab-2" role="tabpanel">
+                            <table class="table table-sm table-feat">
+                                <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Priority</th>
+                                        <th>Description</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th>SA1</th>
+                                        <td>1</td>
+                                        <td>Listing of all the scheduled events.</td>
+                                    </tr>
+                                    <tr>
+                                        <th>SA2</th>
+                                        <td>1</td>
+                                        <td>Visualization of all the data collected about the people the user met.</td>
+                                    </tr>
+                                    <tr>
+                                        <th>SA3</th>
+                                        <td>1</td>
+                                        <td>Creation of a new event.</td>
+                                    </tr>
+                                    <tr>
+                                        <th>SA4</th>
+                                        <td>1</td>
+                                        <td>Joining of an event.</td>
+                                    </tr>
+                                    <tr>
+                                        <th>SA5</th>
+                                        <td>3</td>
+                                        <td>Sending notifications about new events, according to the user's tastes.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
 
-                <div class="tab-pane fade" id="feat-pills-content-2">
-                    <table class="table table-sm table-feat">
-                        <thead>
-                            <tr>
-                                <th>Priority</th>
-                                <th>Description</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th>1</th>
-                                <td>Listing of all the scheduled events.</td>
-                            </tr>
-                            <tr>
-                                <th>1</th>
-                                <td>Visualization of all the data collected about the people the user met.</td>
-                            </tr>
-                            <tr>
-                                <th>1</th>
-                                <td>Creation of a new event.</td>
-                            </tr>
-                            <tr>
-                                <th>1</th>
-                                <td>Joining of a new event.</td>
-                            </tr>
-                            <tr>
-                                <th>2</th>
-                                <td>Helping the user to find the event's location.</td>
-                            </tr>
-                            <tr>
-                                <th>3</th>
-                                <td>Sending notifications about new events, according to your tastes.</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
+                        <div class="tab-pane" id="feat-tab-3" role="tabpanel">
+                            <table class="table table-sm table-feat">
+                                <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Priority</th>
+                                        <th>Description</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th>WR1</th>
+                                        <td>1</td>
+                                        <td>Setting of the watchface colour based on the event's colour.</td>
+                                    </tr>
+                                    <tr>
+                                        <th>WR2</th>
+                                        <td>1</td>
+                                        <td>Activation of the data transfer following an handshake.</td>
+                                    </tr>
+                                    <tr>
+                                        <th>WR3</th>
+                                        <td>2</td>
+                                        <td>Activation of the smart panels when in communication range.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
 
-                <div class="tab-pane fade" id="feat-pills-content-3">
-                    <table class="table table-sm table-feat">
-                        <thead>
-                            <tr>
-                                <th>Priority</th>
-                                <th>Description</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th>1</th>
-                                <td>Setting of the watchface colour based on the event's colour.</td>
-                            </tr>
-                            <tr>
-                                <th>1</th>
-                                <td>Activation of the data transfer following an handshake.</td>
-                            </tr>
-                            <tr>
-                                <th>2</th>
-                                <td>Activation of the smart panels when in communication range.</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-
-                <div class="tab-pane fade" id="feat-pills-content-4">
-                    <table class="table table-sm table-feat">
-                        <thead>
-                            <tr>
-                                <th>Priority</th>
-                                <th>Description</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th>1</th>
-                                <td>Detection of the presence of a user nearby.</td>
-                            </tr>
-                            <tr>
-                                <th>1</th>
-                                <td>Providing of the right direction to the user, lighting up its leds forming an arrow sign.</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                        <div class="tab-pane" id="feat-tab-4" role="tabpanel">
+                            <table class="table table-sm table-feat">
+                                <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Priority</th>
+                                        <th>Description</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th>RS1</th>
+                                        <td>1</td>
+                                        <td>Detection of the presence of a user nearby.</td>
+                                    </tr>
+                                    <tr>
+                                        <th>RS2</th>
+                                        <td>1</td>
+                                        <td>Providing of the right direction to the user, lighting up its leds forming an arrow sign.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
 
         <!-- ARCHITECTURE -->
-        <div id="architecture" class="text-center">
-            <h1>System architecture</h1>
+        <div id="architecture" class="section text-center">
+            <div class="container">
+                <h1>System architecture</h1>
 
-            <button class="btn btn-link" data-toggle="modal" data-target="#big-arch-modal">
-                <img src="images/architecture/architecture.png" class="img-fluid arch-pic-big">
-            </button>
-
-            <div class="modal fade" id="big-arch-modal">
-                <div class="modal-dialog modal-lg modal-dialog-centered">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h2 class="modal-title">System architecture</h2>
-                            <button type="button" class="close" data-dismiss="modal">
-                                <span>&times;</span>
-                            </button>
-                        </div>
-                        <div class="modal-body">
-                            <img src="images/architecture/architecture.png" class="img-fluid">
-                        </div>
+                <div class="row align-items-center justify-content-around">
+                    <div class="col-md-7 card">
+                        <div class="diagram"></div>
                     </div>
-                </div>
-            </div>
+                    <div class="col-md-4 card">
+                        <div class="arch-desc card-body" id="arch-content-server">
+                            <h5 class="card-title">Central server</h5>
+                            <p>
+                                <strong>Hardware architecture: </strong> The central server will be implemented with a PC with access to the LAN of the residence. It will be used to store and retrieve the data for both the users and the events.
+                            </p>
+                            <p>
+                                <strong>Software architecture: </strong> The central server will run a Python application which will smartly assigns rooms to each event, calculate the route from user's room to the one of the event and generate movie and music playlists according to the users partecipating in that event. It will expose an API that will be used both by the smartphones and the room clients based on Flask and SQLite as the database backend.
+                            </p>
+                            <p>
+                                <strong>Network architecture: </strong> The central server will be reachable via LAN or WLAN in every room of the residence and will use a static IP address so that every device on the LAN will know how the URI to query to access the exposed APIs.
+                            </p>
+                        </div>
+        
+                        <div class="arch-desc card-body d-none" id="arch-content-room-client">
+                            <h5 class="card-title">Room client</h5>
+                            <p>
+                                <strong>Hardware architecture: </strong> Every room will be managed by a Raspberry Pi client, with the role of controlling all the smart devices in the room, based on the information exchanged with the central server.
+                            </p>
+                            <p>
+                                <strong>Software architecture: </strong> The room clients will run a Python application with the goal of adjusting lights, TV and audio to fit the category of the event and adapts the ambient characteristics dinamically. It will communicate with the server via the room API using the Python requests module and will make use of different kinds of Python modules to control the smart devices around.
+                            </p>
+                            <p>
+                                <strong>Network architecture: </strong> The room clients will be connected to the LAN via a wired or wireless connection (no need for static IP, rooms will have an unique identifier to be recognized by the server) and will use different protocols to control the smart devices around it.
+                            </p>
+                        </div>
+        
+                        <div class="arch-desc card-body d-none" id="arch-content-smartphone">
+                            <h5 class="card-title">Smartphone</h5>
+                            <p>
+                                <strong>Hardware architecture: </strong> Any kind of Android device can be used to interface with the system via the app, provided that it has Bluetooth to connect to the wearable and WiFi to connect to the server.
+                            </p>
+                            <p>
+                                <strong>Software architecture: </strong> The smartphone app will be based on Android API level xx (Android x.x) and will use the Android Nearby API for point-to-point communications among devices. It will interface with the users API of the server and will provide events management functions (create/join) and show information about the people the users meet at the events.
+                            </p>
+                            <p>
+                                <strong>Network architecture: </strong> The users' smartphones will use Bluetooth to communicate with their wearables and WiFi to access the server LAN. They will also use different kinds of nearby communication protocols to exchange data among users following a handshake, managed by the Nearby API.
+                            </p>
+                        </div>
+        
+                        <div class="arch-desc card-body d-none" id="arch-content-wearable">
+                            <h5 class="card-title">Wearable</h5>
+                            <p>
+                                <strong>Hardware architecture: </strong> Wearables will be Android Wear devices, used to recognize handshakes among the users and indicate the event the user is going to take part in.
+                            </p>
+                            <p>
+                                <strong>Software architecture: </strong> The wearable application will be based on Android Wear 2.0 API (level xx) and will coordinate with the smartphone app to show on the device information about the event (like the event's colour) and activate the data transmission recognizing the handshake gesture.
+                            </p>
+                            <p>
+                                <strong>Network architecture: </strong> The wearables will be connected via Bluetooth to the smartphones and will transparently (via the Wear API) use their WiFi connection if needed.
+                            </p>
+                        </div>
 
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="arch-pic-container">
-                        <img class="arch-pic img-fluid" src="images/architecture/hardware_sq.jpg">
-                    </div>
-                    <h2>Hardware architecture</h2>
-
-                    <div class="card-text" id="accordion-hw">
-                        <div class="card">
-                            <div class="card-header" id="card-header-hw-1">
-                                <button class="btn btn-link" data-toggle="collapse" data-target="#card-body-hw-1">
-                                    <strong>Central server</strong>
-                                </button>
-                            </div>
-                    
-                            <div id="card-body-hw-1" class="collapse" data-parent="#accordion-hw">
-                                <div class="card-body">
-                                    The central server will be implemented with a PC with access to the LAN of the residence. It will be used to store and retrieve the data for both the users and the events.
-                                </div>
-                            </div>
-                        </div>
-    
-                        <div class="card">
-                            <div class="card-header" id="card-header-hw-2">
-                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#card-body-hw-2">
-                                    <strong>Room clients</strong>
-                                </button>
-                            </div>
-                    
-                            <div id="card-body-hw-2" class="collapse" data-parent="#accordion-hw">
-                                <div class="card-body">
-                                    Every room will be managed by a Raspberry Pi client, with the role of controlling all the smart devices in the room, based on the information exchanged with the central server.
-                                </div>
-                            </div>
-                        </div>
-    
-                        <div class="card">
-                            <div class="card-header" id="card-header-hw-3">
-                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#card-body-hw-3">
-                                    <strong>Smartphones</strong>
-                                </button>
-                            </div>
-                    
-                            <div id="card-body-hw-3" class="collapse" data-parent="#accordion-hw">
-                                <div class="card-body">
-                                    Any kind of Android device can be used to interface with the system via the app, provided that it has Bluetooth to connect to the wearable and WiFi to connect to the server.
-                                </div>
-                            </div>
+                        <div class="arch-desc card-body d-none" id="arch-content-sign-controller">
+                            <h5 class="card-title">Sign controller</h5>
+                            <p>
+                                <strong>Hardware architecture: </strong> The smart signs will be driven by a Raspberry Pi board with a WiFi and Bluetooth module, with the LED matrix connected to the GPIO pins.
+                            </p>
+                            <p>
+                                <strong>Software architecture: </strong> The sign controller will run a Python application to interface with the server and take info on events' location, look for nearby users and control GPIO pins in order to light up the LEDs.
+                            </p>
+                            <p>
+                                <strong>Network architecture: </strong> The sign controller will use a wireless link to communicate with the server and will use Bluetooth connection to identify the users nearby and provide him the correct direction.
+                            </p>
                         </div>
 
-                        <div class="card">
-                            <div class="card-header" id="card-header-hw-4">
-                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#card-body-hw-4">
-                                    <strong>Wearables</strong>
-                                </button>
-                            </div>
-                    
-                            <div id="card-body-hw-4" class="collapse" data-parent="#accordion-hw">
-                                <div class="card-body">
-                                    Wearables will be Android Wear devices, used to recognize handshakes among the users and indicate the event the user is going to take part in.
-                                </div>
-                            </div>
+                        <div class="arch-desc card-body d-none" id="arch-content-sign">
+                            <h5 class="card-title">Smart sign</h5>
+                            <p>
+                                The smart sign will be implemented with 10 RGB LEDs, driven by a Raspberry board, that will form an arrow pointing the direction to the event when the user get close.
+                            </p>
                         </div>
-    
-                        <div class="card">
-                            <div class="card-header" id="card-header-hw-5">
-                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#card-body-hw-5">
-                                    <strong>Smart panels</strong>
-                                </button>
-                            </div>
-                    
-                            <div id="card-body-hw-5" class="collapse" data-parent="#accordion-hw">
-                                <div class="card-body">
-                                    The smart panels will be implemented with RGB leds driven by a Raspberry Pi board with a Bluetooth module, that will form an arrow pointing the direction when the user get close.
-                                </div>
-                            </div>
-                        </div>
-    
-                        <div class="card">
-                            <div class="card-header" id="card-header-hw-6">
-                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#card-body-hw-6">
-                                    <strong>Other hardware</strong>
-                                </button>
-                            </div>
-                    
-                            <div id="card-body-hw-6" class="collapse" data-parent="#accordion-hw">
-                                <div class="card-body">
-                                    Different kinds of smart devices will be present in the room, like Philips Hue Lights, smart TVs, audio control systems or door locking system.
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col-md-4">
-                    <div class="arch-pic-container">
-                        <img class="arch-pic img-fluid" src="images/architecture/software_sq.jpg">
-                    </div>
-                    <h2>Software architecture</h2>
 
-                    <div id="accordion-sw">
-                        <div class="card">
-                            <div class="card-header" id="card-header-sw-1">
-                                <button class="btn btn-link" data-toggle="collapse" data-target="#card-body-sw-1">
-                                    <strong>Server software</strong>
-                                </button>
-                            </div>
-                    
-                            <div id="card-body-sw-1" class="collapse" data-parent="#accordion-sw">
-                                <div class="card-body">
-                                    The central server will run a Python application which will smartly assigns rooms to each event, calculate the route from user's room to the one of the event and generate movie and music playlists according to the users partecipating in that event. It will expose an API that will be used both by the smartphones and the room clients based on Flask and SQLite as the database backend.
-                                </div>
-                            </div>
+                        <div class="arch-desc card-body d-none" id="arch-content-lights">
+                            <h5 class="card-title">Lights</h5>
+                            <p>
+                                We will make use of Philips Hue lights driven by the room clients to control the lighting of the rooms where the events will be held.
+                            </p>
                         </div>
-    
-                        <div class="card">
-                            <div class="card-header" id="card-header-sw-2">
-                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#card-body-sw-2">
-                                    <strong>Room control software</strong>
-                                </button>
-                            </div>
-                    
-                            <div id="card-body-sw-2" class="collapse" data-parent="#accordion-sw">
-                                <div class="card-body">
-                                    The room clients will run a Python application with the goal of adjusting lights, TV and audio to fit the category of the event and adapts the ambient characteristics dinamically. It will communicate with the server via the room API using the Python requests module and will make use of different kinds of Python modules to control the smart devices around.
-                                </div>
-                            </div>
-                        </div>
-    
-                        <div class="card">
-                            <div class="card-header" id="card-header-sw-3">
-                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#card-body-sw-3">
-                                    <strong>Smartphone app</strong>
-                                </button>
-                            </div>
-                    
-                            <div id="card-body-sw-3" class="collapse" data-parent="#accordion-sw">
-                                <div class="card-body">
-                                    The smartphone app will be based on Android API level xx (Android x.x) and will use the Android Nearby API for point-to-point communications among devices. It will interface with the users API of the server and will provide events management functions (create/join) and show information about the people the users meet at the events.
-                                </div>
-                            </div>
-                        </div>
-    
-                        <div class="card">
-                            <div class="card-header" id="card-header-sw-4">
-                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#card-body-sw-4">
-                                    <strong>Wearable software</strong>
-                                </button>
-                            </div>
-                    
-                            <div id="card-body-sw-4" class="collapse" data-parent="#accordion-sw">
-                                <div class="card-body">
-                                    The wearable application will be based on Android Wear 2.0 API (level xx) and will coordinate with the smartphone app to show on the device information about the event (like the event's colour) and activate the data transmission recognizing the handshake gesture.
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col-md-4">
-                    <div class="arch-pic-container">
-                        <img class="arch-pic img-fluid" src="images/architecture/network_sq.jpg">
-                    </div>
-                    <h2>Network architecture</h2>
 
-                    <div id="accordion-nw">
-                        <div class="card">
-                            <div class="card-header" id="card-header-nw-1">
-                                <button class="btn btn-link" data-toggle="collapse" data-target="#card-body-nw-1">
-                                    <strong>Server network</strong>
-                                </button>
-                            </div>
-                    
-                            <div id="card-body-nw-1" class="collapse" data-parent="#accordion-nw">
-                                <div class="card-body">
-                                    The central server will be reachable via LAN or WLAN in every room of the residence and will use a static IP address so that every device on the LAN will know how the URI to query to access the exposed APIs.
-                                </div>
-                            </div>
+                        <div class="arch-desc card-body d-none" id="arch-content-tv">
+                            <h5 class="card-title">Television</h5>
+                            <p>
+                                We will make use of a monitor driven by the room clients as a television system in the events that require this kind of facility.
+                            </p>
                         </div>
-    
-                        <div class="card">
-                            <div class="card-header" id="card-header-nw-2">
-                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#card-body-nw-2">
-                                    <strong>Raspberry clients network</strong>
-                                </button>
-                            </div>
-                    
-                            <div id="card-body-nw-2" class="collapse" data-parent="#accordion-nw">
-                                <div class="card-body">
-                                    The room clients will be connected to the LAN via a wired or wireless connection (no need for static IP, rooms will have an unique identifier to be recognized by the server) and will use different protocols to control the smart devices around it.
-                                </div>
-                            </div>
-                        </div>
-    
-                        <div class="card">
-                            <div class="card-header" id="card-header-nw-3">
-                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#card-body-nw-3">
-                                    <strong>Smartphone network</strong>
-                                </button>
-                            </div>
-                    
-                            <div id="card-body-nw-3" class="collapse" data-parent="#accordion-nw">
-                                <div class="card-body">
-                                    The users' smartphones will use Bluetooth to communicate with their wearables and WiFi to access the server LAN. They will also use different kinds of nearby communication protocols to exchange data among users following a handshake, managed by the Nearby API.
-                                </div>
-                            </div>
-                        </div>
-    
-                        <div class="card">
-                            <div class="card-header" id="card-header-nw-4">
-                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#card-body-nw-4">
-                                    <strong>Wearable network</strong>
-                                </button>
-                            </div>
-                    
-                            <div id="card-body-nw-4" class="collapse" data-parent="#accordion-nw">
-                                <div class="card-body">
-                                    The wearables will be connected via Bluetooth to the smartphones and will transparently (via the Wear API) use their WiFi connection if needed.
-                                </div>
-                            </div>
-                        </div>
-                      
-                        <div class="card">
-                            <div class="card-header" id="card-header-nw-5">
-                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#card-body-nw-5">
-                                    <strong>Smart panel network</strong>
-                                </button>
-                            </div>
-                    
-                            <div id="card-body-nw-5" class="collapse" data-parent="#accordion-nw">
-                                <div class="card-body">
-                                    The smart panels will use a wireless or wired link to access the server LAN and take info on events' location and will use Bluetooth connection to identify the users nearby and provide him the correct direction.
-                                </div>
-                            </div>
+
+                        <div class="arch-desc card-body d-none" id="arch-content-speakers">
+                            <h5 class="card-title">Speakers</h5>
+                            <p>
+                                We will make use of a couple of stereo speakers, wired or wireless, driven by the room clients as an audio system in the events that require this kind of facility.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -614,200 +516,166 @@
         </div>
 
         <!-- COMPONENTS -->
-        <div id="components" class="text-center">
-            <h1>System components</h1>
+        <div id="components" class="section text-center">
+            <div class="container">
+                <h1>System components</h1>
 
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="arch-pic-container">
-                        <img class="arch-pic img-fluid" src="images/architecture/hardware_sq.jpg">
+                <div class="row justify-content-around">
+                    <div class="col-md-5 card">
+                        <div class="card-header-img bg-hw"></div>
+                        <div class="card-body">
+                            <h2>Hardware components</h2>
+
+                            <strong>Off-the-shelf</strong>
+                            <ul class="list-unstyled">
+                                <li>A PC</li>
+                                <li>Some Raspberry Pis</li>
+                                <li>Some Android smartphones</li>
+                                <li>Some Android Wear smartwatches</li>
+                                <li>Some Philips Hue bulbs</li>
+                                <li>A smart TV</li>
+                                <li>A couple of stereo speakers</li>
+                            </ul>
+        
+                            <strong>Ad-hoc</strong>
+                            <ul class="list-unstyled">
+                                <li>Smart panels</li>
+                            </ul>
+                        </div>
                     </div>
-                    <h2>Hardware components</h2>
+    
+                    <div class="col-md-5 card">
+                            <div class="card-header-img bg-sw"></div>
+                            <div class="card-body">
+                            <h2>Software components</h2>
 
-                    <strong>Off-the-shelf</strong>
-                    <ul class="list-unstyled">
-                        <li>A PC</li>
-                        <li>Some Raspberry Pis</li>
-                        <li>Some Android smartphones</li>
-                        <li>Some Android Wear smartwatches</li>
-                        <li>Some Philips Hue bulbs</li>
-                        <li>A smart TV</li>
-                        <li>A couple of stereo speakers</li>
-                    </ul>
-
-                    <strong>Ad-hoc</strong>
-                    <ul class="list-unstyled">
-                        <li>Smart panels</li>
-                    </ul>
-                </div>
-
-                <div class="col-md-6">
-                    <div class="arch-pic-container">
-                        <img class="arch-pic img-fluid" src="images/architecture/software_sq.jpg">
+                            <strong>Python</strong>
+                            <ul class="list-unstyled">
+                                <li>Flask to build the server API</li>
+                                <li>SQLAlchemy to manage the SQLite database</li>
+                                <li>Requests to build the client software</li>
+                                <li>Various libraries to control smart components</li>
+                            </ul>
+        
+                            <strong>Android</strong>
+                            <ul class="list-unstyled">
+                                <li>Android API Level xx for app design</li>
+                                <li>Android Nearby API for data sharing</li>
+                                <li>Android Wear APIs for the wearable</li>
+                            </ul>
+                        </div>
                     </div>
-                    <h2>Software components</h2>
-
-                    <strong>Python</strong>
-                    <ul class="list-unstyled">
-                        <li>Flask to build the server API</li>
-                        <li>SQLite3 to manage the database</li>
-                        <li>Requests to build the client software</li>
-                        <li>Various libraries to control smart components</li>
-                    </ul>
-
-                    <strong>Android</strong>
-                    <ul class="list-unstyled">
-                        <li>Android API Level xx for app design</li>
-                        <li>Android Nearby API for data sharing</li>
-                        <li>Android Wear APIs for the wearable</li>
-                    </ul>
                 </div>
             </div>
         </div>
 
         <!-- ISSUES -->
-        <div id="issues" class="text-center">
-            <h1>Open issues</h1>
-            <p>
-                The following is a list of the open issues our project still needs to face:
-            </p>
-            <!-- when an issue is solved it will be set as disabled -->
-            <ul class="list-group">
-                <li class="list-group-item">
-                    <del>choose the wearable to use, with all the needed sensors and technology for data transmission</del>
-                    <br>
-                    we chose to use Android Wear smartwatches for the wearable and Android Nearby API for data transmission
-                </li>
-                <li class="list-group-item">
-                    <del>choose the kind of display for indicators and figure out how to connect them to the system</del>
-                    <br>
-                    we chose to use an ad-hoc made component based on a LED matrix and an Arduino connected to the system via Bluetooth
-                </li>
-            </ul>
+        <div id="issues" class="section text-center">
+            <div class="container">
+                <h1>Open issues</h1>
+                <p>
+                    The following is a list of the open issues our project still needs to face:
+                </p>
+                <!-- when an issue is solved it will be set as disabled -->
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <del>choose the wearable to use, with all the needed sensors and technology for data transmission</del>
+                        <br>
+                        we chose to use Android Wear smartwatches for the wearable and Android Nearby API for data transmission
+                    </li>
+                    <li class="list-group-item">
+                        <del>choose the kind of display for indicators and figure out how to connect them to the system</del>
+                        <br>
+                        we chose to use an ad-hoc made component based on a LED matrix and a Raspberry connected to the system via Bluetooth and WiFi
+                    </li>
+                </ul>
+            </div>
         </div>
 
-        <!-- GROUP -->
-        <div id="team" class="text-center">
-            <h1>NTMY team</h1>
-            <div class="row">
-                <div class="col-12 col-sm-6 col-md-3 text-center">
-                    <div class="team-pic-container">
-                        <img class="img-fluid team-pic" src="images/team/alessio_ciarcia.jpg" alt="" srcset="">
+        <!-- TEAM -->
+        <div id="team" class="section text-center">
+            <div class="container">
+                <h1>NTMY team</h1>
+                <div class="row">
+                    <div class="col-12 col-sm-6 col-md-3 text-center">
+                        <div class="team-pic-container">
+                            <img class="img-fluid rounded-circle img-raised team-pic" src="images/team/alessio_ciarcia.jpg" alt="" srcset="">
+                        </div>
+                        <h2>Alessio Ciarcià</h2>
+                        <p>
+                            ID 224705
+                            <br>
+                            SW developer
+                            <br>
+                            <a href="https://github.com/ac-zero"><i class="fab fa-github"></i> ac-zero</a>
+                            <br>
+                            <a href="mailto:alessiociarc@gmail.com"><i class="fas fa-envelope"></i> alessiociarc@gmail.com</a>
+                        </p>
                     </div>
-                    <h2>Alessio Ciarcià</h2>
-                    <p>
-                        ID 224705
-                        <br>
-                        SW developer
-                        <br>
-                        <a href="https://github.com/ac-zero"><i class="fab fa-github"></i> ac-zero</a>
-                        <br>
-                        <a href="mailto:alessiociarc@gmail.com"><i class="fas fa-envelope"></i> alessiociarc@gmail.com</a>
-                    </p>
-                </div>
-                <div class="col-12 col-sm-6 col-md-3 text-center">
-                    <div class="team-pic-container">
-                        <img class="img-fluid team-pic" src="images/team/matteo_corain.jpg" alt="" srcset="">
+                    <div class="col-12 col-sm-6 col-md-3 text-center">
+                        <div class="team-pic-container">
+                            <img class="img-fluid rounded-circle img-raised team-pic" src="images/team/matteo_corain.jpg" alt="" srcset="">
+                        </div>
+                        <h2>Matteo Corain</h2>
+                        <p>
+                            ID 222981
+                            <br>
+                            SW developer
+                            <br>
+                            <a href="https://github.com/mattecora"><i class="fab fa-github"></i> mattecora</a>
+                            <br>
+                            <a href="mailto:m96.corain@gmail.com"><i class="fas fa-envelope"></i> m96.corain@gmail.com</a>
+                        </p>
                     </div>
-                    <h2>Matteo Corain</h2>
-                    <p>
-                        ID 222981
-                        <br>
-                        SW developer
-                        <br>
-                        <a href="https://github.com/mattecora"><i class="fab fa-github"></i> mattecora</a>
-                        <br>
-                        <a href="mailto:m96.corain@gmail.com"><i class="fas fa-envelope"></i> m96.corain@gmail.com</a>
-                    </p>
-                </div>
-                <div class="col-12 col-sm-6 col-md-3 text-center">
-                    <div class="team-pic-container">
-                        <img class="img-fluid team-pic" src="images/team/andrea_cossio.jpg" alt="" srcset="">
+                    <div class="col-12 col-sm-6 col-md-3 text-center">
+                        <div class="team-pic-container">
+                            <img class="img-fluid rounded-circle img-raised team-pic" src="images/team/andrea_cossio.jpg" alt="" srcset="">
+                        </div>
+                        <h2>Andrea Cossio</h2>
+                        <p>
+                            ID 224221
+                            <br>
+                            SW developer
+                            <br>
+                            <a href="https://github.com/AndreaCossio"><i class="fab fa-github"></i> AndreaCossio</a>
+                            <br>
+                            <a href="mailto:andreacossio96@outlook.com"><i class="fas fa-envelope"></i> andreacossio96@outlook.com</a>
+                        </p>
                     </div>
-                    <h2>Andrea Cossio</h2>
-                    <p>
-                        ID 224221
-                        <br>
-                        SW developer
-                        <br>
-                        <a href="https://github.com/AndreaCossio"><i class="fab fa-github"></i> AndreaCossio</a>
-                        <br>
-                        <a href="mailto:andreacossio96@outlook.com"><i class="fas fa-envelope"></i> andreacossio96@outlook.com</a>
-                    </p>
-                </div>
-                <div class="col-12 col-sm-6 col-md-3 text-center">
-                    <div class="team-pic-container">
-                        <img class="img-fluid team-pic" src="images/team/raffaele_tuzzo.jpg" alt="" srcset="">
+                    <div class="col-12 col-sm-6 col-md-3 text-center">
+                        <div class="team-pic-container">
+                            <img class="img-fluid rounded-circle img-raised team-pic" src="images/team/raffaele_tuzzo.jpg" alt="" srcset="">
+                        </div>
+                        <h2>Raffaele Tuzzo</h2>
+                        <p>
+                            ID 223261
+                            <br>
+                            HW developer
+                            <br>
+                            <a href="https://github.com/Raffot27"><i class="fab fa-github"></i> Raffot27</a>
+                            <br>
+                            <a href="mailto:raffot27@gmail.com"><i class="fas fa-envelope"></i> raffot27@gmail.com</a>
+                        </p>
                     </div>
-                    <h2>Raffaele Tuzzo</h2>
-                    <p>
-                        ID 223261
-                        <br>
-                        HW developer
-                        <br>
-                        <a href="https://github.com/Raffot27"><i class="fab fa-github"></i> Raffot27</a>
-                        <br>
-                        <a href="mailto:raffot27@gmail.com"><i class="fas fa-envelope"></i> raffot27@gmail.com</a>
-                    </p>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- FOOTER -->
-    <div id="footer" class="bg-dark text-light">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-3 text-md-left" id="footer-col-left">
-                    <a href="#" class="logo">NTMY</a>
-                </div>
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
 
-                <div class="col-md-6" id="footer-col-center">
-                    <ul class="nav justify-content-center">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#home">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#vision">Vision</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#ami-ms">AmI steps</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#ami-f">AmI features</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#goal">Goal</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#features">Features</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#architecture">Architecture</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#components">Components</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#issues">Issues</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#team">Team</a>
-                        </li>
-                    </ul>
-                </div>
+    <!-- Now UI JS -->
+    <script src="assets/js/now-ui-kit.js" type="text/javascript"></script>
 
-                <div class="col-md-3 text-md-right" id="footer-col-right">
-                    <span class="social-icon"><a href="https://github.com/AmI-2018/NTMY"><i class="fab fa-github"></i></a></span>
-                </div>
-            </div>
+    <!-- Rellax -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.6.2/rellax.min.js"></script>
+    <script src="assets/js/jumbo_par.js"></script>
 
-            <small>&copy; Copyright 2018, NTMY team</small>
-        </div>
-    </div>
-
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
-    <script src="assets/script.js"></script>
+    <!-- Vis.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.js"></script>
+    <script src="assets/js/diagram.js"></script>
 </body>
 </html>
