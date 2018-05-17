@@ -89,6 +89,7 @@ table {
 
 .card {
     padding: 0px;
+    width: 95%;
 }
 
 .card .card-body {
@@ -139,6 +140,15 @@ table {
 
 .nav-tabs>.nav-item>.nav-link.active:hover {
     box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.17);
+}
+
+@media screen and (max-width: 768px) {
+    .nav-tabs {
+        display: flex;
+        padding-left: 0px;
+        padding-right: 0px;
+        width: auto;
+    }
 }
 
 /* Architecture */
