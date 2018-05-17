@@ -132,7 +132,7 @@ nowuiKit = {
         navbar_menu_visible: 0
     },
 
-    checkScrollForTransparentNavbar: debounce(function() {
+    checkScrollForTransparentNavbar: function() {
         if ($(document).scrollTop() > scroll_distance) {
             if (transparent) {
                 transparent = false;
@@ -144,7 +144,7 @@ nowuiKit = {
                 $('.navbar[color-on-scroll]').addClass('navbar-transparent');
             }
         }
-    }, 0),
+    },
 
     initNavbarImage: function() {
         var $navbar = $('.navbar').find('.navbar-translate').siblings('.navbar-collapse');
@@ -190,22 +190,3 @@ nowuiKit = {
         });
     }
 }
-
-// Returns a function, that, as long as it continues to be invoked, will not
-// be triggered. The function will be called after it stops being called for
-// N milliseconds. If `immediate` is passed, trigger the function on the
-// leading edge, instead of the trailing.
-
-function debounce(func, wait, immediate) {
-    var timeout;
-    return function() {
-        var context = this,
-            args = arguments;
-        clearTimeout(timeout);
-        timeout = setTimeout(function() {
-            timeout = null;
-            if (!immediate) func.apply(context, args);
-        }, wait);
-        if (immediate && !timeout) func.apply(context, args);
-    };
-};
