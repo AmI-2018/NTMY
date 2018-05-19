@@ -33,9 +33,12 @@ table {
 }
 
 @media screen and (max-width: 991px) {
-    .nav-open .sidebar-collapse .navbar-collapse {
+    .sidebar-collapse .navbar-collapse {
         background: linear-gradient(#f96332 0%, #000 80%);
         overflow-y: auto;
+    }
+    .sidebar-collapse .navbar-collapse:before {
+        background: transparent;
     }
 }
 
