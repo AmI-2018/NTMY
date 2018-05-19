@@ -32,6 +32,13 @@ table {
     font-size: 1.5em !important;
 }
 
+@media screen and (max-width: 991px) {
+    .nav-open .sidebar-collapse .navbar-collapse {
+        background: linear-gradient(#f96332 0%, #000 80%);
+        overflow-y: auto;
+    }
+}
+
 /* Jumbotron */
 
 .big-logo {
