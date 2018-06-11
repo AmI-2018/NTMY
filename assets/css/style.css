@@ -32,6 +32,10 @@ table {
     font-size: 1.5em !important;
 }
 
+.small-logo {
+    height: 1.5em;
+}
+
 @media screen and (max-width: 991px) {
     .sidebar-collapse .navbar-collapse {
         background: linear-gradient(#f96332 0%, #000 80%);
@@ -45,7 +49,7 @@ table {
 /* Jumbotron */
 
 .big-logo {
-    font-size: 100px;
+    height: 15vh;
 }
 
 /* AmI main steps */
