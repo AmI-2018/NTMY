@@ -1,1 +1,1 @@
-var rellax = new Rellax('.page-header-image');
+var rellax = new Rellax('.page-header');

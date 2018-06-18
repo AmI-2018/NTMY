@@ -48,6 +48,12 @@ table {
 
 /* Jumbotron */
 
+.page-header {
+    background-image: linear-gradient(0deg, rgba(44, 44, 44, 0.2), rgba(224, 23, 3, 0.6)), url('../../images/handshake.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
 .big-logo {
     height: 15vh;
 }
