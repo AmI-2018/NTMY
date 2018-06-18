@@ -52,6 +52,14 @@ table {
     height: 15vh;
 }
 
+.title-main {
+    margin-bottom: 15px;
+}
+
+.title-sub {
+    margin-top: 0px;
+}
+
 /* AmI main steps */
 
 .ami-title {
