@@ -80,29 +80,19 @@
     <!-- CONTENT -->
     <div class="wrapper">
         <!-- JUMBOTRON -->
-        <div class="page-header clear-filter">
+        <div class="page-header clear-filter" filter-color="orange">
+            <div class="page-header-image" style="background-image: url('images/handshake.jpg')"></div>
             <div class="container">
-                <div class="content-center">
+                <div class="content-center brand">
                     <img src="images/logo.png" class="big-logo">
-                    <h1 class="title-main">Nice to meet you</h1>
-                    <h4 class="title-sub">Your college events organizer</h4>
+                    <h1>Nice to meet you</h1>
+                    <h3>Your college events organizer</h3>
                     <a href="https://github.com/AmI-2018/NTMY-code">
                         <button class="btn btn-primary" id="github-cta">
                             <span class="social-icon" style="vertical-align: middle;"><i class="fab fa-github"></i></span>
                             <span style="vertical-align: middle;">Check out our work on Github!</span>
                         </button>
                     </a>
-                </div>
-            </div>
-        </div>
-
-        <!-- VIDEO -->
-        <div class="section" id="video">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-md-8 embed-responsive embed-responsive-16by9">
-                        <iframe width="auto" height="auto" src="https://www.youtube.com/embed/izPPzUvJ-Gs?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                    </div>
                 </div>
             </div>
         </div>
@@ -552,15 +542,18 @@
                                 <li>Some Android smartphones</li>
                                 <li>Some Android Wear smartwatches</li>
                                 <li>Some Philips Hue bulbs</li>
-                                <li>A monitor or TV</li>
+                                <li>A smart TV</li>
                                 <li>A couple of stereo speakers</li>
                             </ul>
         
                             <strong>Ad-hoc</strong>
                             <ul class="list-unstyled">
-                                <li>Smart panels</li>
+                                <a href="images/architecture/general_scheme_smart_panel.png"/>
+                                <li>Smart Panels</li>
+                                </a>
                             </ul>
                         </div>
+                        <div class="card-header-img bg-panel"></div>
                     </div>
     
                     <div class="col-md-5 card">
@@ -573,12 +566,13 @@
                                 <li>Flask to build the server API</li>
                                 <li>SQLAlchemy to manage the SQLite database</li>
                                 <li>Requests to build the client software</li>
-                                <li>Networkx to manage the routing scheme</li>
+                                <li>Various libraries to control smart components</li>
                             </ul>
         
                             <strong>Android</strong>
                             <ul class="list-unstyled">
-                                <li>Android API Level 23 (6.0) for app design</li>
+                                <li>Android API Level xx for app design</li>
+                                <li>Android Nearby API for data sharing</li>
                                 <li>Android Wear APIs for the wearable</li>
                             </ul>
                         </div>

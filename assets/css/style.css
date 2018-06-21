@@ -141,7 +141,7 @@ table {
 }
 
 .bg-hw {
-    background: linear-gradient(rgba(44, 44, 44, 0.2), rgba(224, 23, 3, 0.6)), url('../../images/architecture/hardware.jpg');
+    background: url('../../images/architecture/panel.gif');
     background-position: center;
     background-size: cover;
 }
