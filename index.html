@@ -115,7 +115,10 @@
                     Imagine you are in a university residence, where you can meet a great amount of people. NTMY, giving you the opportunity to organise thematic events, will help you to meet new friends!
                 </p>
                 <p>
-                    The user can interact with the system using a wearable and a smartphone. With the app you can create a new social event in the residence (like watching a football match together on TV or play a card game). The system will then set a specific location for the event (considering its type and the free rooms) and it will assign it a colour; the user’s wearable will turn that colour too (e.g. blue). Whenever a new event is created, people in the residence with the same interests get a notification and, if they decide to take part to the blue event, their wearables will become blue as well. The lights in the reserved room will also become blue to indicate that the room will host the blue event, and in the main streets of the residence some indicators will light up in blue, in order to help the participants to easily find the event's location.
+                    The user can interact with the system using a wearable and a smartphone. With the app you can create a new social event in the residence (like watching a football match together on TV or play a card game). The system will then set a specific location for the event (considering its type and the free rooms) and it will assign it a colour; the user’s wearable will turn that colour too (e.g. blue).
+                </p>
+                <p>
+                    Whenever a new event is created, people in the residence with the same interests get a notification and, if they decide to take part to the blue event, their wearables will become blue as well. The lights in the reserved room will also become blue to indicate that the room will host the blue event, and in the main streets of the residence some indicators will light up in blue, in order to help the participants to easily find the event's location.
                 </p>
                 <p>
                     The system also acts according to the category of the meeting (e.g. TV event, music event, game event, discussion event), performing actions on the surrounding environment such as adjusting the lights, the video (TV) and the audio facilities of the room.
@@ -137,7 +140,7 @@
                             <h2 class="ami-title">Sensing</h2>
                         </div>
                         <div class="card-body">
-                            Each user wears a smartwatch, which is capable of exchanging personal information among people who meet during an event by transmitting and receiving some data (such as an ID code) from/to the nearby devices. The input for starting the communication is given by the handshake between two users.
+                            Each user wears a smartwatch, which is capable of exchanging personal information among people who meet during an event by transmitting and receiving some data from/to the nearby devices. The input for starting the communication is given by the handshake between two users.
                         </div>
                     </div>
 
@@ -247,7 +250,7 @@
                     The system can improve the management of the rooms in the residence, allocating events in order to maximize the number of participants and find the most suitable room for any kind of event. This process is carried on the central server, that will run an optimization algotithm and generate, for each day, the best events schedule to maximize a number of different target functions such as the number of participants.
                 </p>
                 <p>
-                    Once the event has been scheduled, the system will also help in the phase of the room preparation. Every room will be equipped with a Raspberry computer that will interface with the central server and prepare the ambient in order to make it as enjoyable as possible. It will be able to intelligently control the lights, the TV and the audio systems according to the category of the event choosen and to the number of users taking part of it.
+                    Once the event has been scheduled, the system will also help in the phase of the room preparation. Every room will be equipped with a Raspberry computer that will interface with the central server and prepare the ambient in order to make it as enjoyable as possible. It will be able to intelligently control the lights, the TV and the audio systems according to the category of the event choosen and to the number of users taking part to it.
                 </p>
                 <p>
                     Smart panels will be put in the intersection of the residence, to help the participants to find their way to the events. Whenever an user passes near one of them, the system will identify his wearable (via Bluetooth) and indicate the right direction to reach the specific event room. The panel is controlled by a Raspberry computer, that will dinamically search for the direction making use of a shortest path algorithm on a graph representing the map of the residence.
@@ -305,25 +308,20 @@
                                     <tr>
                                         <th>RO2</th>
                                         <td>1</td>
-                                        <td>Reporting the prenotation-state by the colour of the lights in the room.</td>
+                                        <td>Adjustment of the color of the room's lights to indicate the booking of the room.</td>
                                     </tr>
                                     <tr>
                                         <th>RO3</th>
-                                        <td>1</td>
-                                        <td>Adjustment of the intensity of the room's lights.</td>
+                                        <td>2</td>
+                                        <td>Setting of the TV program, if required by the event.</td>
                                     </tr>
                                     <tr>
                                         <th>RO4</th>
                                         <td>2</td>
-                                        <td>Setting of the TV program, if is required by the event.</td>
-                                    </tr>
-                                    <tr>
-                                        <th>RO5</th>
-                                        <td>2</td>
                                         <td>Music reproduction to fit the event's category.</td>
                                     </tr>
                                     <tr>
-                                        <th>RO6</th>
+                                        <th>RO5</th>
                                         <td>3</td>
                                         <td>Dynamic generation of video and audio playlist based on the tastes of the users in the room.</td>
                                     </tr>
@@ -456,10 +454,10 @@
                                 <strong>Hardware architecture: </strong> Every room will be managed by a Raspberry Pi client, with the role of controlling all the smart devices in the room, based on the information exchanged with the central server.
                             </p>
                             <p>
-                                <strong>Software architecture: </strong> The room clients will run a Python application with the goal of adjusting lights, TV and audio to fit the category of the event and adapts the ambient characteristics dinamically. It will communicate with the server via the room API using the Python requests module and will make use of different kinds of Python modules to control the smart devices around.
+                                <strong>Software architecture: </strong> The room clients will run a Python application with the goal of adjusting lights, TV and audio to fit the category of the event and adapts the ambient characteristics dinamically. It will communicate with the server via the room API and will be able to control a number of different smart devices.
                             </p>
                             <p>
-                                <strong>Network architecture: </strong> The room clients will be connected to the LAN via a wired or wireless connection (no need for static IP, rooms will have an unique identifier to be recognized by the server) and will use different protocols to control the smart devices around it.
+                                <strong>Network architecture: </strong> The room clients will be connected to the LAN via a wired or wireless connection (no need for static IP, rooms will have an unique identifier to be recognised by the server) and will use different protocols to control the smart devices around it.
                             </p>
                         </div>
         
@@ -472,17 +470,17 @@
                                 <strong>Software architecture: </strong> The smartphone app will be based on Android API level 23 (Android 6.0) and will use the Android Bluetooth interface for point-to-point communications among devices. It will interface with the users API of the server and will provide events management functions (create/join) and show information about the people the users meet at the events.
                             </p>
                             <p>
-                                <strong>Network architecture: </strong> The users' smartphones will use Bluetooth to communicate with their wearables and WiFi to access the server LAN. They will also use different kinds of nearby communication protocols to exchange data among users following a handshake, managed by the Nearby API.
+                                <strong>Network architecture: </strong> The users' smartphones will use Bluetooth to communicate with their wearables and WiFi to access the server LAN. They will also use Bluetooth to exchange data among users following a handshake.
                             </p>
                         </div>
         
                         <div class="arch-desc card-body d-none" id="arch-content-wearable">
                             <h5 class="card-title">Wearable</h5>
                             <p>
-                                <strong>Hardware architecture: </strong> Wearables will be Android Wear devices, used to recognize handshakes among the users and indicate the event the user is going to take part in.
+                                <strong>Hardware architecture: </strong> Wearables will be Android Wear devices, used to recognise handshakes among the users and indicate the event the user is going to take part in.
                             </p>
                             <p>
-                                <strong>Software architecture: </strong> The wearable application will be based on Android Wear 2.0 API (level xx) and will coordinate with the smartphone app to show on the device information about the event (like the event's colour) and activate the data transmission recognizing the handshake gesture.
+                                <strong>Software architecture: </strong> The wearable application will be based on Android Wear 2.0 API and will coordinate with the smartphone app to show on the device information about the event (like the event's colour) and activate the data transmission recognising the handshake gesture.
                             </p>
                             <p>
                                 <strong>Network architecture: </strong> The wearables will be connected via Bluetooth to the smartphones and will transparently (via the Wear API) use their WiFi connection if needed.
@@ -492,7 +490,7 @@
                         <div class="arch-desc card-body d-none" id="arch-content-sign-controller">
                             <h5 class="card-title">Sign controller</h5>
                             <p>
-                                <strong>Hardware architecture: </strong> The Smart Road Signs will be managed by a Raspberry Pi board w with t LED matrix connected to the GPIO pins.
+                                <strong>Hardware architecture: </strong> The Smart Road Signs will be managed by a Raspberry Pi board with a LED matrix connected to the GPIO pins.
                             </p>
                             <p>
                                 <strong>Software architecture: </strong> The sign controller will run a Python application to interface with the server and take info on events' location, look for nearby users and control GPIO pins in order to light up the LEDs.
@@ -505,7 +503,7 @@
                         <div class="arch-desc card-body d-none" id="arch-content-sign">
                             <h5 class="card-title">Smart sign</h5>
                             <p>
-                                The smart sign will be implemented with 8 RGB LEDs, driven by a Raspberry board, that will form an arrow pointing the direction to the event when the user get close.
+                                The smart sign will be implemented with 8 RGB LEDs, driven by the Raspberry board, that will form an arrow pointing the direction to the event when the user get close.
                             </p>
                             <p>
                                 <a href="images/architecture/general_scheme_smart_panel.png">See the full schematic</a>
@@ -522,14 +520,14 @@
                         <div class="arch-desc card-body d-none" id="arch-content-tv">
                             <h5 class="card-title">Television</h5>
                             <p>
-                                We will make use of a monitor driven by the room clients as a television system in the events that require this kind of facility.
+                                We will make use of a monitor driven by the room clients as a television system for the events that require this kind of facility.
                             </p>
                         </div>
 
                         <div class="arch-desc card-body d-none" id="arch-content-speakers">
                             <h5 class="card-title">Speakers</h5>
                             <p>
-                                We will make use of a couple of stereo speakers, wired or wireless, driven by the room clients as an audio system in the events that require this kind of facility.
+                                We will make use of a couple of stereo speakers, wired or wireless, driven by the room clients as an audio system for the events that require this kind of facility.
                             </p>
                         </div>
                     </div>
@@ -602,7 +600,7 @@
                     <li class="list-group-item">
                         <del>choose the wearable to use, with all the needed sensors and technology for data transmission</del>
                         <br>
-                        we chose to use Android Wear smartwatches for the wearable and Android Nearby API for data transmission
+                        we chose to use Android Wear smartwatches for the wearable and the Bluetooth technology for data transmission
                     </li>
                     <li class="list-group-item">
                         <del>choose the kind of display for indicators and figure out how to connect them to the system</del>
